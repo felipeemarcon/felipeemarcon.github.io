@@ -1,0 +1,4491 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 9, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+/* line 19, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+/* line 33, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+/* line 54, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 67, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+/* line 77, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+/* line 89, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 97, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+/* line 109, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+/* line 117, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+/* line 126, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+/* line 135, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 144, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 153, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 161, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 169, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 173, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+/* line 184, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+/* line 192, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+/* line 203, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 211, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+/* line 221, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+/* line 229, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+/* line 252, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+/* line 266, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+/* line 277, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 290, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 302, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 311, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 322, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 334, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+/* line 346, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 357, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+/* line 370, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 379, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 390, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+/* line 399, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+/* line 408, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 419, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 424, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/normalize.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*!
+ * Bootstrap v3.3.1 (http://getbootstrap.com)
+ * Copyright 2011-2014 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*!
+ * Generated using the Bootstrap Customizer (http://getbootstrap.com/customize/?id=b2d57c89c7536565483c)
+ * Config saved to config.json and https://gist.github.com/b2d57c89c7536565483c
+ */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/* line 12, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 17, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+body {
+  margin: 0;
+}
+
+/* line 20, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 35, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 42, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 46, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/* line 50, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+a {
+  background-color: transparent;
+}
+
+/* line 53, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 57, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 60, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 64, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 67, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 71, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 75, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 78, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 85, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 88, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 91, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+img {
+  border: 0;
+}
+
+/* line 94, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 97, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+figure {
+  margin: 1em 40px;
+}
+
+/* line 100, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+hr {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/* line 106, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 109, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 116, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+/* line 125, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+button {
+  overflow: visible;
+}
+
+/* line 128, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 132, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 139, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/* line 143, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 148, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+input {
+  line-height: normal;
+}
+
+/* line 151, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 158, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 162, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 168, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 172, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 177, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+legend {
+  border: 0;
+  padding: 0;
+}
+
+/* line 181, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 184, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 187, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 191, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/../css/main.css */
+@media print {
+  /* line 197, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 206, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 210, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 213, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 216, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  /* line 220, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 225, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* line 228, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 232, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  /* line 235, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 241, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 245, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  select {
+    background: #fff !important;
+  }
+
+  /* line 248, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .navbar {
+    display: none;
+  }
+
+  /* line 251, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .btn > .caret,
+  .dropup > .btn > .caret {
+    border-top-color: #000 !important;
+  }
+
+  /* line 255, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .label {
+    border: 1px solid #000;
+  }
+
+  /* line 258, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .table {
+    border-collapse: collapse !important;
+  }
+
+  /* line 261, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .table td,
+  .table th {
+    background-color: #fff !important;
+  }
+
+  /* line 265, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+  }
+}
+/* line 270, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 275, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 281, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* line 285, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+/* line 292, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 300, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+/* line 304, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+/* line 309, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* line 314, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+figure {
+  margin: 0;
+}
+
+/* line 317, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+img {
+  vertical-align: middle;
+}
+
+/* line 320, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 325, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.img-rounded {
+  border-radius: 6px;
+}
+
+/* line 328, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 341, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.img-circle {
+  border-radius: 50%;
+}
+
+/* line 344, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 350, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* line 360, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/* line 369, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  /* line 376, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 381, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 386, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .container {
+    width: 1170px;
+  }
+}
+/* line 390, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 396, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/* line 400, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 406, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 409, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 412, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-11 {
+  width: 91.66666667%;
+}
+
+/* line 415, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-10 {
+  width: 83.33333333%;
+}
+
+/* line 418, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 421, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-8 {
+  width: 66.66666667%;
+}
+
+/* line 424, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-7 {
+  width: 58.33333333%;
+}
+
+/* line 427, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 430, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-5 {
+  width: 41.66666667%;
+}
+
+/* line 433, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-4 {
+  width: 33.33333333%;
+}
+
+/* line 436, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 439, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-2 {
+  width: 16.66666667%;
+}
+
+/* line 442, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-1 {
+  width: 8.33333333%;
+}
+
+/* line 445, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-12 {
+  right: 100%;
+}
+
+/* line 448, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+
+/* line 451, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+
+/* line 454, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-9 {
+  right: 75%;
+}
+
+/* line 457, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+
+/* line 460, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+
+/* line 463, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-6 {
+  right: 50%;
+}
+
+/* line 466, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+
+/* line 469, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+
+/* line 472, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-3 {
+  right: 25%;
+}
+
+/* line 475, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+
+/* line 478, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+
+/* line 481, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-pull-0 {
+  right: auto;
+}
+
+/* line 484, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-12 {
+  left: 100%;
+}
+
+/* line 487, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+
+/* line 490, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+
+/* line 493, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-9 {
+  left: 75%;
+}
+
+/* line 496, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+
+/* line 499, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+
+/* line 502, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-6 {
+  left: 50%;
+}
+
+/* line 505, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+
+/* line 508, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+
+/* line 511, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-3 {
+  left: 25%;
+}
+
+/* line 514, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+
+/* line 517, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+
+/* line 520, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-push-0 {
+  left: auto;
+}
+
+/* line 523, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+/* line 526, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+
+/* line 529, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+
+/* line 532, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 535, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+
+/* line 538, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+
+/* line 541, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 544, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+
+/* line 547, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+
+/* line 550, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 553, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+
+/* line 556, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+
+/* line 559, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+@media (min-width: 768px) {
+  /* line 563, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 566, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 569, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 572, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 575, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 578, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 581, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 584, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 587, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 590, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 593, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 596, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 599, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 602, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-12 {
+    right: 100%;
+  }
+
+  /* line 605, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 608, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 611, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-9 {
+    right: 75%;
+  }
+
+  /* line 614, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 617, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 620, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-6 {
+    right: 50%;
+  }
+
+  /* line 623, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 626, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 629, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-3 {
+    right: 25%;
+  }
+
+  /* line 632, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 635, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 638, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-pull-0 {
+    right: auto;
+  }
+
+  /* line 641, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-12 {
+    left: 100%;
+  }
+
+  /* line 644, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 647, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 650, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-9 {
+    left: 75%;
+  }
+
+  /* line 653, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 656, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 659, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-6 {
+    left: 50%;
+  }
+
+  /* line 662, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 665, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 668, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-3 {
+    left: 25%;
+  }
+
+  /* line 671, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 674, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 677, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-push-0 {
+    left: auto;
+  }
+
+  /* line 680, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 683, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 686, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 689, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 692, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 695, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 698, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 701, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 704, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 707, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 710, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 713, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 716, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-sm-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 721, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 724, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 727, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 730, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 733, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 736, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 739, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 742, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 745, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 748, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 751, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 754, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 757, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 760, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-12 {
+    right: 100%;
+  }
+
+  /* line 763, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 766, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 769, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-9 {
+    right: 75%;
+  }
+
+  /* line 772, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 775, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 778, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-6 {
+    right: 50%;
+  }
+
+  /* line 781, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 784, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 787, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-3 {
+    right: 25%;
+  }
+
+  /* line 790, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 793, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 796, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-pull-0 {
+    right: auto;
+  }
+
+  /* line 799, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-12 {
+    left: 100%;
+  }
+
+  /* line 802, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 805, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 808, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-9 {
+    left: 75%;
+  }
+
+  /* line 811, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 814, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 817, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-6 {
+    left: 50%;
+  }
+
+  /* line 820, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 823, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 826, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-3 {
+    left: 25%;
+  }
+
+  /* line 829, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 832, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 835, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-push-0 {
+    left: auto;
+  }
+
+  /* line 838, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 841, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 844, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 847, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 850, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 853, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 856, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 859, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 862, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 865, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 868, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 871, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 874, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-md-offset-0 {
+    margin-left: 0%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 879, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 882, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 885, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+
+  /* line 888, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+
+  /* line 891, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 894, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+
+  /* line 897, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+
+  /* line 900, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 903, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+
+  /* line 906, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+
+  /* line 909, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 912, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+
+  /* line 915, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+
+  /* line 918, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-12 {
+    right: 100%;
+  }
+
+  /* line 921, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-11 {
+    right: 91.66666667%;
+  }
+
+  /* line 924, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-10 {
+    right: 83.33333333%;
+  }
+
+  /* line 927, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-9 {
+    right: 75%;
+  }
+
+  /* line 930, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-8 {
+    right: 66.66666667%;
+  }
+
+  /* line 933, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-7 {
+    right: 58.33333333%;
+  }
+
+  /* line 936, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-6 {
+    right: 50%;
+  }
+
+  /* line 939, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-5 {
+    right: 41.66666667%;
+  }
+
+  /* line 942, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-4 {
+    right: 33.33333333%;
+  }
+
+  /* line 945, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-3 {
+    right: 25%;
+  }
+
+  /* line 948, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-2 {
+    right: 16.66666667%;
+  }
+
+  /* line 951, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-1 {
+    right: 8.33333333%;
+  }
+
+  /* line 954, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-pull-0 {
+    right: auto;
+  }
+
+  /* line 957, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-12 {
+    left: 100%;
+  }
+
+  /* line 960, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-11 {
+    left: 91.66666667%;
+  }
+
+  /* line 963, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-10 {
+    left: 83.33333333%;
+  }
+
+  /* line 966, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-9 {
+    left: 75%;
+  }
+
+  /* line 969, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-8 {
+    left: 66.66666667%;
+  }
+
+  /* line 972, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-7 {
+    left: 58.33333333%;
+  }
+
+  /* line 975, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-6 {
+    left: 50%;
+  }
+
+  /* line 978, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-5 {
+    left: 41.66666667%;
+  }
+
+  /* line 981, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-4 {
+    left: 33.33333333%;
+  }
+
+  /* line 984, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-3 {
+    left: 25%;
+  }
+
+  /* line 987, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-2 {
+    left: 16.66666667%;
+  }
+
+  /* line 990, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-1 {
+    left: 8.33333333%;
+  }
+
+  /* line 993, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-push-0 {
+    left: auto;
+  }
+
+  /* line 996, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+
+  /* line 999, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  /* line 1002, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  /* line 1005, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 1008, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  /* line 1011, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  /* line 1014, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 1017, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  /* line 1020, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  /* line 1023, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 1026, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  /* line 1029, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  /* line 1032, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .col-lg-offset-0 {
+    margin-left: 0%;
+  }
+}
+/* line 1036, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+/* line 1047, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
+  clear: both;
+}
+
+/* line 1053, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 1058, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.pull-right {
+  float: right !important;
+}
+
+/* line 1061, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.pull-left {
+  float: left !important;
+}
+
+/* line 1064, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.hide {
+  display: none !important;
+}
+
+/* line 1067, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.show {
+  display: block !important;
+}
+
+/* line 1070, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 1073, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/* line 1080, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* line 1084, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.affix {
+  position: fixed;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+/* line 1090, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+
+/* line 1096, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.visible-xs-block,
+.visible-xs-inline,
+.visible-xs-inline-block,
+.visible-sm-block,
+.visible-sm-inline,
+.visible-sm-inline-block,
+.visible-md-block,
+.visible-md-inline,
+.visible-md-inline-block,
+.visible-lg-block,
+.visible-lg-inline,
+.visible-lg-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  /* line 1111, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-xs {
+    display: block !important;
+  }
+
+  /* line 1114, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  table.visible-xs {
+    display: table;
+  }
+
+  /* line 1117, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  tr.visible-xs {
+    display: table-row !important;
+  }
+
+  /* line 1120, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  th.visible-xs,
+  td.visible-xs {
+    display: table-cell !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1126, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1131, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1136, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1141, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-sm {
+    display: block !important;
+  }
+
+  /* line 1144, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  table.visible-sm {
+    display: table;
+  }
+
+  /* line 1147, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  tr.visible-sm {
+    display: table-row !important;
+  }
+
+  /* line 1150, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  th.visible-sm,
+  td.visible-sm {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1156, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1161, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1166, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1171, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-md {
+    display: block !important;
+  }
+
+  /* line 1174, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  table.visible-md {
+    display: table;
+  }
+
+  /* line 1177, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  tr.visible-md {
+    display: table-row !important;
+  }
+
+  /* line 1180, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  th.visible-md,
+  td.visible-md {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1186, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-md-block {
+    display: block !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1191, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1196, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1201, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-lg {
+    display: block !important;
+  }
+
+  /* line 1204, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  table.visible-lg {
+    display: table;
+  }
+
+  /* line 1207, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  tr.visible-lg {
+    display: table-row !important;
+  }
+
+  /* line 1210, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  th.visible-lg,
+  td.visible-lg {
+    display: table-cell !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1216, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1221, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1226, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 1231, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* line 1236, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* line 1241, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 1246, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .hidden-lg {
+    display: none !important;
+  }
+}
+/* line 1250, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.visible-print {
+  display: none !important;
+}
+
+@media print {
+  /* line 1254, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-print {
+    display: block !important;
+  }
+
+  /* line 1257, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  table.visible-print {
+    display: table;
+  }
+
+  /* line 1260, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  tr.visible-print {
+    display: table-row !important;
+  }
+
+  /* line 1263, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  th.visible-print,
+  td.visible-print {
+    display: table-cell !important;
+  }
+}
+/* line 1268, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.visible-print-block {
+  display: none !important;
+}
+
+@media print {
+  /* line 1272, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-print-block {
+    display: block !important;
+  }
+}
+/* line 1276, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.visible-print-inline {
+  display: none !important;
+}
+
+@media print {
+  /* line 1280, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-print-inline {
+    display: inline !important;
+  }
+}
+/* line 1284, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+.visible-print-inline-block {
+  display: none !important;
+}
+
+@media print {
+  /* line 1288, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .visible-print-inline-block {
+    display: inline-block !important;
+  }
+}
+@media print {
+  /* line 1293, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/bootstrap.scss */
+  .hidden-print {
+    display: none !important;
+  }
+}
+/* Responsive Breakpoins */
+/* Golden Ration Font Pattern */
+/* use: +font-size or +font-size(xl) */
+@font-face {
+  font-family: "Proxima";
+  font-weight: 100;
+  font-style: normal;
+  src: url("/fonts/ProximaNova-Light.eot");
+  src: url("/fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Light.woff") format("woff"), url("/fonts/ProximaNova-Light.ttf") format("truetype"), url("/fonts/ProximaNova-Light.svg#Proxima") format("svg");
+}
+@font-face {
+  font-family: "Proxima";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/ProximaNova-Regular.eot");
+  src: url("/fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Regular.woff") format("woff"), url("/fonts/ProximaNova-Regular.ttf") format("truetype"), url("/fonts/ProximaNova-Regular.svg#Proxima") format("svg");
+}
+@font-face {
+  font-family: "Proxima";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/fonts/ProximaNova-Semibold.eot");
+  src: url("/fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Semibold.woff") format("woff"), url("/fonts/ProximaNova-Semibold.ttf") format("truetype"), url("/fonts/ProximaNova-Semibold.svg#Proxima") format("svg");
+}
+@font-face {
+  font-family: "Proxima";
+  font-weight: bold;
+  font-style: normal;
+  src: url("/fonts/ProximaNova-Bold.eot");
+  src: url("/fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/ProximaNova-Bold.woff") format("woff"), url("/fonts/ProximaNova-Bold.ttf") format("truetype"), url("/fonts/ProximaNova-Bold.svg#Proxima") format("svg");
+}
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, if it's not present, don't show loader */
+/* line 14, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.no-js #loader {
+  display: none;
+}
+
+/* line 17, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+/* line 23, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("/img/pre_loader.gif") center no-repeat #ffffff;
+}
+
+/* line 33, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+a {
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 36, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 39, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+p {
+  font-size: 16px;
+  color: #606060;
+}
+
+/* line 43, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.charm_red {
+  color: #F73131;
+}
+
+/* line 46, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+img {
+  width: 100%;
+}
+
+/* line 49, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+h1, h2 {
+  margin: 0;
+  font-weight: 100;
+}
+
+/* line 53, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+h1 {
+  font-size: 26px;
+}
+@media (min-width: 992px) {
+  /* line 53, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 59, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .flex_centered {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Semibold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima';
+  src: url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+    url('../fonts/ProximaNova-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+/* line 66, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+body {
+  font-family: "Proxima", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+/* line 71, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+body.menu_open {
+  overflow: hidden;
+}
+/* line 76, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+body.menu_open .mr_header__brand svg path, body.menu_open .mr_header__brand svg polygon {
+  -webkit-transition: 0.35s 0.2s ease;
+  -moz-transition: 0.35s 0.2s ease;
+  transition: 0.35s 0.2s ease;
+  fill: #ffffff;
+}
+
+/* line 80, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header {
+  padding: 25px 0;
+  position: relative;
+}
+/* line 84, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__brand {
+  position: relative;
+  z-index: 101;
+}
+/* line 88, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__brand a {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+/* line 94, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__brand svg path, .mr_header__brand svg polygon {
+  -webkit-transition: 0.35s 0.4s ease;
+  -moz-transition: 0.35s 0.4s ease;
+  transition: 0.35s 0.4s ease;
+}
+/* line 97, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__brand svg #marcon {
+  opacity: 0;
+}
+/* line 101, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu {
+  list-style: none;
+  background-color: #F73131;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 120px 30px 60px;
+  -webkit-transform: translateX(200%);
+  -moz-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -o-transform: translateX(200%);
+  transform: translateX(200%);
+  -webkit-transition: 0.35s 0.5s ease;
+  -moz-transition: 0.35s 0.5s ease;
+  transition: 0.35s 0.5s ease;
+}
+/* line 115, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu li {
+  animation: toLeft 0.35s 0.2s ease both;
+}
+/* line 118, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu li:nth-child(2) {
+  animation-delay: 0.25s;
+}
+/* line 121, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+/* line 124, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu li:nth-child(4) {
+  animation-delay: 0.35s;
+}
+/* line 127, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu li a {
+  display: inline-block;
+  padding: 20px 0;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+}
+/* line 134, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu.open {
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 139, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu.open li {
+  animation: fromLeft 0.35s 0.2s ease both;
+}
+/* line 142, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu.open li:nth-child(2) {
+  animation-delay: 0.25s;
+}
+/* line 145, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu.open li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+/* line 148, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_header__menu.open li:nth-child(4) {
+  animation-delay: 0.35s;
+}
+@media (min-width: 992px) {
+  /* line 80, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    height: 162px;
+    -webkit-transition: 0.35s 0s ease;
+    -moz-transition: 0.35s 0s ease;
+    transition: 0.35s 0s ease;
+  }
+  /* line 163, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header.is_sticky {
+    height: 82px;
+    background: #ffffff;
+    box-shadow: 0 11px 40px 0 rgba(187, 16, 16, 0.04);
+    -webkit-transition: 0.35s 0s ease;
+    -moz-transition: 0.35s 0s ease;
+    transition: 0.35s 0s ease;
+  }
+  /* line 171, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a {
+    width: initial;
+  }
+  /* line 175, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a svg path, .mr_header__brand a svg polygon {
+    transition: none;
+  }
+  /* line 178, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a svg #marcon {
+    opacity: 1;
+  }
+  /* line 181, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a svg #marcon path, .mr_header__brand a svg #marcon polygon {
+    -webkit-transition: 0.35s 0s ease;
+    -moz-transition: 0.35s 0s ease;
+    transition: 0.35s 0s ease;
+  }
+  /* line 184, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a svg #symbol {
+    -webkit-transition: 0.35s 0s ease;
+    -moz-transition: 0.35s 0s ease;
+    transition: 0.35s 0s ease;
+  }
+  /* line 189, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a:hover svg #symbol {
+    fill: #000000;
+  }
+  /* line 193, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__brand a:hover svg #marcon path, .mr_header__brand a:hover svg #marcon polygon {
+    fill: #F73131;
+  }
+  /* line 196, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header #nav-icon2 {
+    display: none;
+  }
+  /* line 199, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__menu {
+    position: initial;
+    width: initial;
+    height: initial;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    padding: 0;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* line 209, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__menu li {
+    animation: none;
+  }
+  /* line 212, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__menu li a {
+    font-size: 16px;
+    padding: 20px 0;
+    color: #343434;
+    font-weight: 500;
+    position: relative;
+  }
+  /* line 219, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__menu li a:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #F73131;
+    opacity: 0;
+    -webkit-transform: translateX(-20px) scale3d(0, 1, 1);
+    -moz-transform: translateX(-20px) scale3d(0, 1, 1);
+    -ms-transform: translateX(-20px) scale3d(0, 1, 1);
+    -o-transform: translateX(-20px) scale3d(0, 1, 1);
+    transform: translateX(-20px) scale3d(0, 1, 1);
+    transform-origin: 0 100%;
+    -webkit-transition: 0.35s 0s cubic-bezier(0.76, 0.18, 0.09, 0.84);
+    -moz-transition: 0.35s 0s cubic-bezier(0.76, 0.18, 0.09, 0.84);
+    transition: 0.35s 0s cubic-bezier(0.76, 0.18, 0.09, 0.84);
+  }
+  /* line 232, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__menu li a:hover {
+    color: #F73131;
+  }
+  /* line 235, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_header__menu li a:hover:before {
+    opacity: 1;
+    -webkit-transform: translateX(0px) scale3d(1, 1, 1);
+    -moz-transform: translateX(0px) scale3d(1, 1, 1);
+    -ms-transform: translateX(0px) scale3d(1, 1, 1);
+    -o-transform: translateX(0px) scale3d(1, 1, 1);
+    transform: translateX(0px) scale3d(1, 1, 1);
+    transform-origin: 0 100%;
+    -webkit-transition: 0.35s 0s cubic-bezier(0.76, 0.18, 0.09, 0.84);
+    -moz-transition: 0.35s 0s cubic-bezier(0.76, 0.18, 0.09, 0.84);
+    transition: 0.35s 0s cubic-bezier(0.76, 0.18, 0.09, 0.84);
+  }
+}
+
+/* line 241, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro {
+  padding: 40px 0;
+}
+/* line 245, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 {
+  color: #121212;
+  line-height: 35px;
+}
+/* line 249, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 span {
+  font-weight: 400;
+  position: relative;
+  display: inline-block;
+}
+/* line 254, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 span:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: rgba(247, 49, 49, 0.12);
+  transform-origin: 0 50%;
+  -webkit-transform: scale3d(0, 1, 1);
+  -moz-transform: scale3d(0, 1, 1);
+  -ms-transform: scale3d(0, 1, 1);
+  -o-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transition: 0.6s 0.2s cubic-bezier(0.68, 0.31, 0, 0.99);
+  -moz-transition: 0.6s 0.2s cubic-bezier(0.68, 0.31, 0, 0.99);
+  transition: 0.6s 0.2s cubic-bezier(0.68, 0.31, 0, 0.99);
+}
+/* line 266, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 6px;
+  width: 100%;
+  background: #F73131;
+  transform-origin: 0 50%;
+  -webkit-transform: scale3d(0, 1, 1);
+  -moz-transform: scale3d(0, 1, 1);
+  -ms-transform: scale3d(0, 1, 1);
+  -o-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transition: 0.6s 0s cubic-bezier(0.68, 0.31, 0, 0.99);
+  -moz-transition: 0.6s 0s cubic-bezier(0.68, 0.31, 0, 0.99);
+  transition: 0.6s 0s cubic-bezier(0.68, 0.31, 0, 0.99);
+}
+/* line 279, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 span:hover:after, .mr_intro__heading h1 span:hover:before {
+  transform-origin: 0 50%;
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+/* line 283, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 span:hover:before {
+  -webkit-transition: 0.6s 0s cubic-bezier(0.68, 0.31, 0, 0.99);
+  -moz-transition: 0.6s 0s cubic-bezier(0.68, 0.31, 0, 0.99);
+  transition: 0.6s 0s cubic-bezier(0.68, 0.31, 0, 0.99);
+}
+/* line 286, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_intro__heading h1 span:hover:after {
+  -webkit-transition: 0.6s 0.2s cubic-bezier(0.68, 0.31, 0, 0.99);
+  -moz-transition: 0.6s 0.2s cubic-bezier(0.68, 0.31, 0, 0.99);
+  transition: 0.6s 0.2s cubic-bezier(0.68, 0.31, 0, 0.99);
+}
+@media (min-width: 992px) {
+  /* line 241, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_intro {
+    padding: 80px 0 40px;
+  }
+  /* line 294, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_intro__heading h1 {
+    font-size: 70px;
+    line-height: 85px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 241, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_intro {
+    padding: 70px 0 110px;
+  }
+}
+
+/* line 302, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_about {
+  padding: 0px 0 40px;
+}
+/* line 305, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_about h1 {
+  color: #fff;
+}
+/* line 309, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_about__photo img {
+  width: 100%;
+}
+/* line 313, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_about__text p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 28px;
+}
+/* line 318, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_about .grid__item-link {
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  /* line 302, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_about {
+    margin-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* line 326, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_about:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 1800px;
+    background: url("/img/rectangle_white.png") no-repeat center;
+    background-size: cover;
+  }
+  /* line 336, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_about__text {
+    padding-top: 40px;
+  }
+  /* line 339, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_about__text p {
+    font-size: 21px;
+    line-height: 36px;
+  }
+}
+
+/* line 344, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__heading {
+  margin-bottom: 30px;
+}
+/* line 347, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__heading p {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+/* line 351, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__item {
+  display: block;
+  margin: 50px 0;
+}
+/* line 355, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__item:first-child {
+  margin-top: 0;
+}
+/* line 359, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__item--title h2 {
+  color: #000000;
+  font-size: 26px;
+  margin: 12px 0;
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 366, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__item--tags ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+/* line 374, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__item--tags ul li {
+  color: #BEBEBE;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 10px;
+}
+/* line 380, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_jobs__item--tags ul li:first-child {
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  /* line 343, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs {
+    position: relative;
+  }
+  /* line 386, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -80px;
+    left: 0;
+    width: 805px;
+    height: 935px;
+    background: url("/img/rectangle_red.png") no-repeat left;
+  }
+  /* line 397, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__heading {
+    margin-bottom: 65px;
+  }
+  /* line 400, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__heading p {
+    margin: 0;
+  }
+  /* line 404, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item--content {
+    padding: 0;
+    padding-bottom: 15px;
+    -webkit-transition: 0.35s 0s ease;
+    -moz-transition: 0.35s 0s ease;
+    transition: 0.35s 0s ease;
+  }
+  /* line 409, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item--thumb {
+    overflow: hidden;
+    height: 270px;
+  }
+  /* line 413, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item--thumb img {
+    -webkit-transition: 0.8s 0s ease-in-out;
+    -moz-transition: 0.8s 0s ease-in-out;
+    transition: 0.8s 0s ease-in-out;
+  }
+  /* line 416, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item:hover {
+    background: #ffffff;
+    box-shadow: 0 12px 30px 0 rgba(214, 40, 40, 0.06);
+  }
+  /* line 420, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item:hover .mr_jobs__item--content {
+    padding: 0 10px 15px;
+  }
+  /* line 424, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item:hover .mr_jobs__item--title h2 {
+    color: #F73131;
+  }
+  /* line 428, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_jobs__item:hover .mr_jobs__item--thumb img {
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+  }
+}
+
+/* line 431, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_footer {
+  margin-top: 40px;
+  padding: 30px 0 15px;
+}
+/* line 435, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_footer p {
+  text-align: center;
+  font-size: 14px;
+  color: #BEBEBE;
+  margin: 0;
+}
+
+/* line 443, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__heading {
+  margin: 80px 0;
+}
+/* line 446, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__heading p {
+  margin: 0;
+}
+/* line 449, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos {
+  background: #FFFCFC;
+  padding: 20px 30px;
+  height: 545px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+/* line 459, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--heading {
+  margin-bottom: 40px;
+  margin-left: -50px;
+}
+/* line 463, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--heading h1 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #000000;
+}
+/* line 469, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 475, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--list ul li a {
+  font-size: 20px;
+  color: #F73131;
+  text-decoration: underline;
+  padding: 10px 0;
+  display: block;
+}
+/* line 482, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--list ul li a:hover {
+  color: #343434;
+}
+/* line 485, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--list ul.social {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 493, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--list ul.social a svg path, .mr_contact__infos--list ul.social a polygon {
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 497, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_contact__infos--list ul.social a:hover svg path, .mr_contact__infos--list ul.social a:hover polygon {
+  fill: #F73131;
+}
+@media (min-width: 992px) {
+  /* line 442, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_contact {
+    margin-bottom: 100px;
+  }
+  /* line 504, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_contact__heading p {
+    font-size: 18px;
+  }
+}
+
+/* line 507, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+/* line 513, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form input, .mr_form textarea {
+  border: none;
+  width: 100%;
+  color: #343434;
+  outline: none;
+  padding: 15px 0;
+}
+/* line 520, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form input::placeholder, .mr_form textarea::placeholder {
+  color: #BEBEBE;
+  text-transform: lowercase;
+}
+/* line 524, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form input {
+  position: relative;
+  font-size: 18px;
+}
+/* line 528, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__group {
+  margin: 30px 0;
+  position: relative;
+  display: block;
+}
+/* line 533, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__group:nth-child(2) {
+  margin-top: 0;
+}
+/* line 536, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__group:nth-last-child(3) {
+  margin-bottom: 0;
+}
+/* line 539, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__group:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #E2E2E2;
+}
+/* line 549, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__group:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #F73131;
+  transform-origin: 0 100%;
+  -webkit-transform: scale3d(0, 1, 1);
+  -moz-transform: scale3d(0, 1, 1);
+  -ms-transform: scale3d(0, 1, 1);
+  -o-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 563, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__group.input_focus:after {
+  transform-origin: 0 100%;
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 568, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form textarea {
+  resize: none;
+}
+/* line 572, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form.error_form label.error {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  font-weight: 500;
+  font-size: 14px;
+  color: #F73131;
+  animation: fromLeft 0.35s ease 0s both;
+}
+/* line 581, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile {
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0s 0.4s, opacity 0.35s 0.35s ease;
+  -moz-transition: -moz-transform 0s 0.4s, opacity 0.35s 0.35s ease;
+  transition: transform 0s 0.4s, opacity 0.35s 0.35s ease;
+}
+/* line 598, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile h3, .mr_form__message_mobile p {
+  animation: toLeft 0.35s ease 0s both;
+}
+/* line 601, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile h3 {
+  font-size: 36px;
+  color: #F73131;
+  animation-delay: 0.15s;
+}
+/* line 606, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile p {
+  color: #606060;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* line 611, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile p a {
+  text-decoration: underline;
+  color: #F73131;
+}
+/* line 615, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile.success {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: opacity 0.35s 0s ease;
+  -moz-transition: opacity 0.35s 0s ease;
+  transition: opacity 0.35s 0s ease;
+}
+/* line 621, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile.success h3, .mr_form__message_mobile.success p {
+  animation: fromLeft 0.35s ease 0.15s both;
+}
+/* line 624, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message_mobile.success h3 p, .mr_form__message_mobile.success p p {
+  animation-delay: 0.25s;
+}
+/* line 627, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* line 633, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__footer button {
+  background: #F73131;
+  text-transform: lowercase;
+  border: none;
+  padding: 17px 35px;
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+  position: relative;
+}
+/* line 642, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__footer button:focus {
+  border: none;
+  outline: none;
+}
+/* line 646, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__footer button p {
+  margin: 0;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 18px;
+  font-size: 18px;
+  position: relative;
+  z-index: 2;
+}
+/* line 656, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__footer button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #343434;
+  transform-origin: 0 100%;
+  -webkit-transform: scale3d(1, 0, 1);
+  -moz-transform: scale3d(1, 0, 1);
+  -ms-transform: scale3d(1, 0, 1);
+  -o-transform: scale3d(1, 0, 1);
+  transform: scale3d(1, 0, 1);
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 670, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__footer button:hover:after {
+  transform-origin: 0 100%;
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 675, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message {
+  background: #fdf5f5;
+  width: 75%;
+  padding: 15px 20px;
+  transform-origin: 0 100%;
+  -webkit-transform: scale3d(0, 1, 1);
+  -moz-transform: scale3d(0, 1, 1);
+  -ms-transform: scale3d(0, 1, 1);
+  -o-transform: scale3d(0, 1, 1);
+  transform: scale3d(0, 1, 1);
+  -webkit-transition: 0.35s 0.2s cubic-bezier(0.76, 0.28, 0.25, 0.78);
+  -moz-transition: 0.35s 0.2s cubic-bezier(0.76, 0.28, 0.25, 0.78);
+  transition: 0.35s 0.2s cubic-bezier(0.76, 0.28, 0.25, 0.78);
+  overflow: hidden;
+}
+/* line 684, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  animation: toLeft 0.35s ease 0s both;
+}
+/* line 690, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message.success {
+  transform-origin: 0 100%;
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  -ms-transform: scale3d(1, 1, 1);
+  -o-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  -webkit-transition: 0.35s 0s cubic-bezier(0.76, 0.28, 0.25, 0.78);
+  -moz-transition: 0.35s 0s cubic-bezier(0.76, 0.28, 0.25, 0.78);
+  transition: 0.35s 0s cubic-bezier(0.76, 0.28, 0.25, 0.78);
+}
+/* line 695, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_form__message.success p {
+  animation: fromLeft 0.35s ease 0.2s both;
+}
+@media (min-width: 992px) {
+  /* line 699, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_form__group {
+    margin: 50px 0;
+  }
+  /* line 702, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_form__group:nth-child(2) {
+    margin-top: 50px;
+  }
+  /* line 705, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_form__message_mobile {
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+/* line 710, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal {
+  padding: 40px 0;
+}
+/* line 713, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__heading {
+  margin: 30px 0;
+}
+/* line 716, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__heading h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: #000000;
+  line-height: 40px;
+}
+/* line 722, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__heading p {
+  margin-top: 7px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* line 728, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__heading p span {
+  color: #F73131;
+}
+/* line 731, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content {
+  margin: 40px 0;
+  border-bottom: 1px solid rgba(190, 190, 190, 0.3);
+}
+/* line 735, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--image {
+  background: #343434;
+  width: 100%;
+  height: 300px;
+}
+/* line 740, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--text {
+  margin-top: 30px;
+}
+/* line 743, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--text p {
+  font-size: 16px;
+  color: #606060;
+  line-height: 28px;
+}
+/* line 748, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--tags {
+  margin: 0;
+  padding: 40px 0 60px;
+}
+/* line 752, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--tags h3 {
+  font-weight: 500;
+  font-size: 14px;
+  color: #F73131;
+}
+/* line 757, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--tags ul {
+  list-style: none;
+  padding-left: 10px;
+  margin: 0;
+}
+/* line 762, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_internal__content--tags ul li {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+  padding: 4px 0;
+}
+@media (min-width: 992px) {
+  /* line 769, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__heading {
+    margin: 30px 0 70px;
+  }
+  /* line 772, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__heading h1 {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 55px;
+  }
+  /* line 777, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content {
+    margin-top: 20px;
+    background: #ffffff;
+    box-shadow: 0 20px 30px 0 rgba(167, 15, 15, 0.03);
+    border: none;
+  }
+  /* line 783, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--image {
+    overflow: hidden;
+    position: relative;
+  }
+  /* line 787, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--image img {
+    height: 100%;
+    width: initial;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  /* line 795, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--text {
+    margin: 0;
+    padding: 40px 70px 0px 0;
+  }
+  /* line 799, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--text p {
+    font-size: 16px;
+    color: #606060;
+    line-height: 33px;
+  }
+  /* line 804, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--text p:first-child {
+    margin-top: 0;
+  }
+  /* line 807, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--tags {
+    padding: 30px 0 40px;
+  }
+  /* line 810, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--tags ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  /* line 815, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--tags ul li {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+  /* line 819, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+  .mr_internal__content--tags ul li:first-child {
+    padding-left: 0;
+  }
+}
+
+/* line 822, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.mr_videos {
+  margin: 50px 0 90px;
+}
+
+/* line 825, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent {
+  border-radius: 3px;
+  display: block;
+  height: 250px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.25s 0.15s ease;
+  -moz-transition: 0.25s 0.15s ease;
+  transition: 0.25s 0.15s ease;
+}
+/* line 834, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent .child {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-color: red;
+  background-blend-mode: multiply;
+  -webkit-transition: 0.25s 0.1s ease;
+  -moz-transition: 0.25s 0.1s ease;
+  transition: 0.25s 0.1s ease;
+}
+/* line 844, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent .child:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-transition: 0.25s 0.1s ease;
+  -moz-transition: 0.25s 0.1s ease;
+  transition: 0.25s 0.1s ease;
+}
+/* line 855, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent .image_item_play {
+  background: #ffffff;
+  width: 55px;
+  height: 55px;
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transition: 0.25s 0.1s ease;
+  -moz-transition: 0.25s 0.1s ease;
+  transition: 0.25s 0.1s ease;
+}
+/* line 869, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent .image_item_play svg {
+  color: #F73131;
+}
+/* line 872, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent .image_item_text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-45%);
+  -moz-transform: translateX(-50%) translateY(-45%);
+  -ms-transform: translateX(-50%) translateY(-45%);
+  -o-transform: translateX(-50%) translateY(-45%);
+  transform: translateX(-50%) translateY(-45%);
+  -webkit-transition: 0.25s 0.1s ease;
+  -moz-transition: 0.25s 0.1s ease;
+  transition: 0.25s 0.1s ease;
+}
+/* line 880, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent .image_item_text p {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+}
+/* line 886, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent:hover {
+  box-shadow: 0 15px 40px 0 rgba(75, 0, 0, 0.21);
+  border-radius: 6px;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-transition: 0.25s 0s ease-in-out;
+  -moz-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+/* line 892, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent:hover .child {
+  background-color: transparent;
+  -webkit-filter: grayscale(0.5);
+  filter: grayscale(0.5);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+  -webkit-transition: 0.25s 0s ease-in-out;
+  -moz-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+/* line 898, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent:hover .child:before {
+  opacity: 1;
+  -webkit-transition: 0.25s 0s ease-in-out;
+  -moz-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+/* line 902, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent:hover .image_item_play {
+  -webkit-transform: translateX(-50%) translateY(-80%);
+  -moz-transform: translateX(-50%) translateY(-80%);
+  -ms-transform: translateX(-50%) translateY(-80%);
+  -o-transform: translateX(-50%) translateY(-80%);
+  transform: translateX(-50%) translateY(-80%);
+  -webkit-transition: 0.25s 0s ease-in-out;
+  -moz-transition: 0.25s 0s ease-in-out;
+  transition: 0.25s 0s ease-in-out;
+}
+/* line 906, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/style.sass */
+.image_item.parent:hover .image_item_text {
+  opacity: 1;
+  -webkit-transform: translateX(-50%) translateY(-80%);
+  -moz-transform: translateX(-50%) translateY(-80%);
+  -ms-transform: translateX(-50%) translateY(-80%);
+  -o-transform: translateX(-50%) translateY(-80%);
+  transform: translateX(-50%) translateY(-80%);
+  -webkit-transition: 0.35s 0.1s ease-in-out;
+  -moz-transition: 0.35s 0.1s ease-in-out;
+  transition: 0.35s 0.1s ease-in-out;
+}
+
+/* @import url("https://use.typekit.net/std3xut.css");
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+} */
+/* Page Loader */
+/* .js .loading::before {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: var(--color-bg);
+}
+
+.js .loading::after {
+	content: '';
+	position: fixed;
+	z-index: 100000;
+	top: 50%;
+	left: 50%;
+	width: 60px;
+	height: 60px;
+	margin: -30px 0 0 -30px;
+	pointer-events: none;
+	border-radius: 50%;
+	opacity: 0.4;
+	background: var(--color-link);
+	animation: loaderAnim 0.7s linear infinite alternate forwards;
+}
+
+@keyframes loaderAnim {
+	to {
+		opacity: 1;
+		transform: scale3d(0.5,0.5,1);
+	}
+} */
+/* line 44, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+a {
+  text-decoration: none;
+  color: var(--color-link);
+  outline: none;
+}
+
+/* line 50, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+  outline: none;
+}
+
+/* line 56, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.hidden {
+  position: absolute;
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+
+/* line 64, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.message {
+  position: relative;
+  z-index: 100;
+  display: none;
+  padding: 1em;
+  text-align: center;
+  color: var(--color-bg);
+  background: var(--color-text);
+}
+
+/* Icons */
+/* line 75, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.icon {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 0 auto;
+  fill: currentColor;
+}
+
+/* line 83, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+main {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 88, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/* Header */
+/* line 98, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.codrops-header {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 2rem 0;
+}
+
+/* line 109, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.codrops-header__title {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 116, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.info {
+  margin: 0 0 0 1.25em;
+  color: var(--color-info);
+}
+
+/* line 121, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.github {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+/* Top Navigation Style */
+/* line 127, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.codrops-links {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 1em 0 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 136, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.codrops-icon {
+  display: inline-block;
+  margin: 0.15em;
+  padding: 0.25em;
+}
+
+/* line 142, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  width: 100vw;
+}
+
+/* line 149, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item--bg {
+  background-color: var(--item-bg);
+  height: 100vw;
+}
+
+/* line 154, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-content {
+  width: 100%;
+  padding: 6vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--item-bg);
+}
+
+/* line 164, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item--bg .grid__item-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* line 172, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/* .grid__item-img canvas {
+	height: 100%;
+} */
+/* line 182, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-img img {
+  height: 100%;
+  display: block;
+}
+
+/* line 187, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-img img:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* line 195, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item:hover .grid__item-img img:nth-child(2) {
+  opacity: 1;
+}
+
+/* line 199, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.js .grid__item-img img {
+  display: none;
+}
+
+/* line 203, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  margin: 2rem 0 0 0;
+  color: var(--item-title);
+}
+
+/* line 211, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-title--small {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+/* line 217, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-meta {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  font-size: 0.95rem;
+  color: var(--item-meta);
+}
+
+/* line 225, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-subtitle {
+  display: block;
+  margin: auto 0 0 0;
+  font-weight: 400;
+  font-size: 1.5em;
+  color: var(--item-subtitle);
+}
+
+/* line 233, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-subtitle span {
+  display: block;
+}
+
+/* line 237, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin: 2rem 0 0 0;
+  color: var(--item-text);
+}
+
+/* line 244, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-link {
+  display: inline-block;
+  color: currentColor;
+  font-weight: 700;
+  font-size: 0.95rem;
+  position: relative;
+  padding: 0 0 0.2rem;
+  pointer-events: auto;
+  color: var(--item-link);
+}
+
+/* line 255, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-link:focus,
+.grid__item-link:hover {
+  color: var(--item-link-hover);
+}
+
+/* line 260, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-link::before {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  width: 80%;
+  height: 1px;
+  bottom: 0;
+  transform-origin: 0% 50%;
+  transform: scale3d(0, 1, 1);
+  opacity: 0;
+  transition: all 0.3s;
+  transition-property: opacity, transform;
+}
+
+/* line 274, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-link:hover::before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}
+
+/* line 279, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-link + .grid__item-link {
+  margin: 0 0 0 3rem;
+}
+
+/* line 283, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-text + .grid__item-link {
+  white-space: nowrap;
+  margin-top: 1rem;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* line 290, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.grid__item-nav {
+  display: flex;
+}
+
+/* Themes */
+/* line 295, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-1 {
+  --item-bg: #F73131;
+  --item-link: #fff;
+  --item-link-hover: #0d2936;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 305, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-2 {
+  --item-bg: rgba(0,0,0,0.2);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 315, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-3 {
+  --item-bg: rgba(0,0,0,0.2);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 325, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-4 {
+  --item-bg: #12161e;
+  --item-link: #fff;
+  --item-link-hover: #9e6817;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 335, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-5 {
+  --item-bg: #efe9dd;
+  --item-link: #12161e;
+  --item-link-hover: #0d13c1;
+  --item-meta: #fff;
+  --item-title: #12161e;
+  --item-subtitle: #12161e;
+  --item-text: #12161e;
+}
+
+/* line 345, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-6 {
+  --item-bg: rgba(0,0,0,0);
+  --item-link: #12161e;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #ffffff;
+  --item-subtitle: #12161e;
+  --item-text: #ffffff;
+}
+
+/* line 355, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-7 {
+  --item-bg: rgba(0,0,0,0);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 365, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-8 {
+  --item-bg: #0c13c1;
+  --item-link: #dd8ca5;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 375, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-9 {
+  --item-bg: #c9efee;
+  --item-link: #000000;
+  --item-link-hover: #e80c40;
+  --item-meta: #fff;
+  --item-title: #000;
+  --item-subtitle: #000;
+  --item-text: #000;
+}
+
+/* line 385, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-10 {
+  --item-bg: rgba(0,0,0,0);
+  --item-link: #000;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #000;
+  --item-text: #fff;
+}
+
+/* line 395, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-11 {
+  --item-bg: rgba(0,0,0,0);
+  --item-link: #000;
+  --item-link-hover: #fff;
+  --item-meta: #000;
+  --item-title: #000;
+  --item-subtitle: #000;
+  --item-text: #000;
+}
+
+/* line 405, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-12 {
+  --item-bg: #4d565b;
+  --item-link: #f6fbfe;
+  --item-link-hover: #000000;
+  --item-meta: #f6fbfe;
+  --item-title: #f6fbfe;
+  --item-subtitle: #f6fbfe;
+  --item-text: #f6fbfe;
+}
+
+/* line 415, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-13 {
+  --item-bg: #d22851;
+  --item-link: #712a3b;
+  --item-link-hover: #f6fbfe;
+  --item-meta: #f6fbfe;
+  --item-title: #f6fbfe;
+  --item-subtitle: #f6fbfe;
+  --item-text: #f6fbfe;
+}
+
+/* line 425, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-14 {
+  --item-bg: rgba(0,0,0,0.2);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 435, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-15 {
+  --item-bg: rgba(0,0,0,0.3);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 445, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-16 {
+  --item-bg: #010101;
+  --item-link: #63676b;
+  --item-link-hover: #f6fbfe;
+  --item-meta: #f6fbfe;
+  --item-title: #f6fbfe;
+  --item-subtitle: #f6fbfe;
+  --item-text: #f6fbfe;
+}
+
+/* line 455, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-17 {
+  --item-bg: #ece7e5;
+  --item-link: #d68d13;
+  --item-link-hover: #2d2c2c;
+  --item-meta: #2d2c2c;
+  --item-title: #2d2c2c;
+  --item-subtitle: #2d2c2c;
+  --item-text: #2d2c2c;
+}
+
+/* line 465, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-18 {
+  --item-bg: rgba(0,0,0,0.2);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+/* line 475, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-19 {
+  --item-bg: rgba(0,0,0,0.1);
+  --item-link: #6317f5;
+  --item-link-hover: #fff;
+  --item-meta: #6317f5;
+  --item-title: #fff;
+  --item-subtitle: #6317f5;
+  --item-text: #fff;
+}
+
+/* line 485, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-20 {
+  --item-bg: #6317f5;
+  --item-link: #b29d85;
+  --item-link-hover: #ffffff;
+  --item-meta: #ffffff;
+  --item-title: #ffffff;
+  --item-subtitle: #ffffff;
+  --item-text: #ffffff;
+}
+
+/* line 495, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-21 {
+  --item-bg: #f7ac03;
+  --item-link: #ffffff;
+  --item-link-hover: #2d2c2c;
+  --item-meta: #2d2c2c;
+  --item-title: #ffffff;
+  --item-subtitle: #2d2c2c;
+  --item-text: #2d2c2c;
+}
+
+/* line 505, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+.theme-22 {
+  --item-bg: rgba(0,0,0,0.2);
+  --item-link: #fff;
+  --item-link-hover: #fff;
+  --item-meta: #fff;
+  --item-title: #fff;
+  --item-subtitle: #fff;
+  --item-text: #fff;
+}
+
+@media screen and (min-width: 85em) {
+  /* line 516, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item-text {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 50em) {
+  /* line 522, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 50vmax);
+  }
+
+  /* line 526, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item {
+    height: 50vmax;
+    width: 100%;
+  }
+
+  /* line 530, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item-subtitle * {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.7, 1);
+    transition-property: transform, opacity;
+  }
+
+  /* line 536, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item:hover .grid__item-subtitle * {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  /* line 540, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item:hover .grid__item-subtitle span {
+    transition-delay: 0.1s;
+  }
+
+  /* line 543, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item:hover .grid__item-subtitle .grid__item-link {
+    transition-delay: 0s;
+  }
+
+  /* line 546, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item-title {
+    font-size: 6vw;
+  }
+
+  /* line 549, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item-title--small {
+    font-size: 3vw;
+  }
+
+  /* line 552, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/base.css */
+  .grid__item-text {
+    margin-top: 2.5rem;
+  }
+}
+/* line 17, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+body {
+  background: #F73131;
+  font-size: 16px;
+  background: #F73131;
+}
+
+/* line 22, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+h1, p {
+  color: #ffffff;
+}
+
+/* line 25, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+h1 {
+  font-weight: bold;
+}
+
+/* line 28, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+p {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  /* line 28, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+  p {
+    font-size: 21px;
+  }
+}
+
+/* line 34, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_header-prev {
+  padding: 35px 0 0;
+}
+/* line 40, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_header-prev__brand a svg #marcon {
+  opacity: 0;
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+/* line 44, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_header-prev__brand a svg path, .mr_header-prev__brand a svg polygon {
+  fill: #ffffff;
+}
+/* line 48, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_header-prev__brand a:hover #marcon {
+  opacity: 1;
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+}
+@media (min-width: 768px) {
+  /* line 34, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+  .mr_header-prev {
+    position: fixed;
+    width: 100%;
+  }
+}
+
+/* line 59, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  padding-top: 50px;
+  align-items: start;
+  justify-content: center;
+}
+/* line 68, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__contact a {
+  color: #a21010;
+  position: relative;
+  padding: 5px 0;
+}
+/* line 73, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__contact a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #a21010;
+  opacity: 1;
+  -webkit-transition: width 0.75s 0s cubic-bezier(1, 0.18, 0.53, 0.4), background 0.25s 0s ease-out, opacity 0.5s 0.25s ease;
+  -moz-transition: width 0.75s 0s cubic-bezier(1, 0.18, 0.53, 0.4), background 0.25s 0s ease-out, opacity 0.5s 0.25s ease;
+  transition: width 0.75s 0s cubic-bezier(1, 0.18, 0.53, 0.4), background 0.25s 0s ease-out, opacity 0.5s 0.25s ease;
+}
+/* line 84, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__contact a:hover {
+  color: #ffffff;
+}
+/* line 87, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__contact a:hover::after {
+  background: #ffffff;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: width 0.75s 0s cubic-bezier(1, 0.18, 0.53, 0.4), background 0.25s 0s ease-in, opacity 0.5s 0.5s ease;
+  -moz-transition: width 0.75s 0s cubic-bezier(1, 0.18, 0.53, 0.4), background 0.25s 0s ease-in, opacity 0.5s 0.5s ease;
+  transition: width 0.75s 0s cubic-bezier(1, 0.18, 0.53, 0.4), background 0.25s 0s ease-in, opacity 0.5s 0.5s ease;
+}
+/* line 94, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__social ul {
+  list-style: none;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 0;
+  padding-left: 0;
+}
+/* line 104, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__social ul li {
+  margin-right: 8px;
+}
+/* line 108, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__social ul a svg path, .mr_previous__social ul a polygon {
+  -webkit-transition: 0.35s 0s ease;
+  -moz-transition: 0.35s 0s ease;
+  transition: 0.35s 0s ease;
+  fill: #ffa1a1;
+}
+/* line 113, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+.mr_previous__social ul a:hover svg path, .mr_previous__social ul a:hover polygon {
+  fill: #ffffff;
+}
+@media (min-width: 768px) {
+  /* line 59, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+  .mr_previous {
+    height: 100vh;
+    align-items: center;
+    padding-top: 0;
+  }
+  /* line 122, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
+  .mr_previous__headline h1 {
+    font-size: 54px;
+  }
+}
