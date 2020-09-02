@@ -4404,7 +4404,6 @@ p {
 @media (min-width: 768px) {
   /* line 34, /Users/felipemarcon/projects/marcon-portfolio/app/assets/stylesheets/previous.sass */
   .mr_header-prev {
-    position: fixed;
     width: 100%;
   }
 }
