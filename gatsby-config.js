@@ -6,5 +6,18 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: 'Felipe Marcon',
+    siteUrl: 'https://felipemarcon.com.br',
+    description:
+      'I am a Product Designer with front-end skills based in Brazil',
+  },
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-typography',
+      options: {
+        pathToConfigModule: 'src/utils/typography',
+      },
+    },
+  ],
 }

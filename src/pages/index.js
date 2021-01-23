@@ -1,5 +1,13 @@
 import React from "react"
 
+// Components
+import Header from '../components/header'
+
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <div>
+      <Header/>
+      <div>Hello world!</div>
+    </div>
+  )
 }
