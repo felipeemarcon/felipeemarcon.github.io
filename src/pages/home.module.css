@@ -1,0 +1,32 @@
+.contactMeTitle {
+  color: var(--brand-primary-darkness);
+  font-size: 40px;
+  line-height: 130%;
+  font-weight: 900;
+}
+
+.contactMeDescription {
+  margin: 24px 0 64px;
+}
+
+.contactMeDescriptionText, .contactMeEmail {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.contactMeDescriptionText {
+  opacity: 0.72;
+}
+
+/* .contactMeEmail {
+
+} */
+
+.contactMeEmail span {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.contactMeEmail a {
+  text-decoration: none;
+}
