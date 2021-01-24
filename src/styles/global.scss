@@ -1,0 +1,17 @@
+// @import 'reset';
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  margin: 0;
+}
+
+html, body {
+  background-color: var(--brand-primary);
+  color: var(--color-neutral-white);
+}
