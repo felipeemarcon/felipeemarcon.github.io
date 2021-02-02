@@ -11,7 +11,9 @@ export default function Header() {
   return (
     <header className={headerStyles.header}>
       <Container customClass={headerStyles.headerContainer}>
-        <h1 className={headerStyles.brand}>{<img src={Logo} alt="" />}</h1>
+        <div className="grid-container grid-default">
+          <h1 className={headerStyles.brand}>{<img src={Logo} alt="" />}</h1>
+        </div>
       </Container>
     </header>
   )

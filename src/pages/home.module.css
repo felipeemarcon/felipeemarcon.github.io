@@ -1,32 +1,126 @@
+.siteMaintenance, .maintenanceWrapper {
+  grid-column: 1 / span 4;
+}
+
+.siteMaintenance {
+  margin-top: 48px;
+}
+
+.siteMaintenance h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.siteMaintenance span:first-child {
+  display: inline-block;
+}
+
+.siteMaintenance span:first-child {
+  margin-right: 4px;
+}
+
+.siteMaintenance span:last-child {
+  margin-left: 4px;
+}
+
+.maintenanceMain {
+  margin-top: 56px;
+}
+
+/* .maintenanceHeading {} */
+
 .contactMeTitle {
   color: var(--brand-primary-darkness);
+  font-family: 'Monument Extended';
   font-size: 40px;
   line-height: 130%;
   font-weight: 900;
+  margin-bottom: 24px;
 }
 
 .contactMeDescription {
-  margin: 24px 0 64px;
+  margin: 24px 0 48px;
 }
 
 .contactMeDescriptionText, .contactMeEmail {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .contactMeDescriptionText {
   opacity: 0.72;
 }
 
-/* .contactMeEmail {
-
-} */
+/* .contactMeEmail {} */
 
 .contactMeEmail span {
   display: inline-block;
   margin-right: 8px;
 }
 
-.contactMeEmail a {
-  text-decoration: none;
+@media screen and (min-width: 748px) {
+  .siteMaintenance, .maintenanceWrapper {
+    grid-column: 1 / span 8;
+  }
+
+  .siteMaintenance {
+    margin-top: 56px;
+  }
+
+  .siteMaintenance h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .maintenanceMain {
+    margin-top: 80px;
+  }
+
+  .contactMeTitle {
+    font-size: 40px;
+  }
+
+  .contactMeDescriptionText, .contactMeEmail {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .contactMeDescription {
+    margin-bottom: 0;
+    max-width: 506px;
+  }
+
+  .contactMeEmail {
+    margin: 64px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .siteMaintenance, .maintenanceWrapper {
+    grid-column: 1 / span 9;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .siteMaintenance, .maintenanceWrapper {
+    grid-column: 1 / span 9;
+  }
+
+  .siteMaintenance {
+    margin-top: 0;
+  }
+
+  .containerMaintenance {
+    height: calc(100vh - 96px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .siteMaintenance h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
