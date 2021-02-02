@@ -1,0 +1,14 @@
+.socialItemContainer {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--brand-yellow);
+  transition: .4s ease-in-out;
+}
+
+.socialItemContainer:hover {
+  background-color: var(--brand-primary-darkness);
+}

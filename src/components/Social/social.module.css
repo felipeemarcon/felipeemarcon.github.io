@@ -1,0 +1,13 @@
+.socialContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: 1fr;
+  grid-gap: 16px;
+  margin: 48px 0 64px;
+}
+
+@media screen and (min-width: 1440px) {
+  .socialContainer {
+    margin-bottom: 0;
+  }
+}
