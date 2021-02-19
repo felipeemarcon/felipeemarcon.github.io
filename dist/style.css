@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #1E44D4;
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+.mButton {
+  padding: 12px 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.mButton::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  z-index: 0;
+  will-change: transform;
+  transition: 0.4s 0.06s cubic-bezier(0.89, 0.08, 0.44, 0.97);
+}
+.mButton__text {
+  position: relative;
+  z-index: 1;
+  color: #1E44D4;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  transition: 0.4s cubic-bezier(0.89, 0.08, 0.44, 0.97);
+}
+.mButton:hover::before {
+  transform: scale(1.1);
+  transition-delay: 0;
+}
+.mButton:hover .mButton__text {
+  transform: scale(1.04);
+  transition-delay: 0.06s;
+}
+
+.mHeader {
+  padding: 16px 0;
+}
+.mHeader__brand a {
+  display: flex;
+}
+
+.mAboutMe {
+  margin-top: 40px;
+}
+.mAboutMe__image {
+  width: 86%;
+  margin: 0 auto;
+  height: 224px;
+}
+.mAboutMe__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.mAboutMe__container {
+  margin-top: -30px;
+}
+.mAboutMe__heading {
+  margin-bottom: 32px;
+}
+.mAboutMe__heading h1 {
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 900;
+}
+.mAboutMe__content {
+  padding-bottom: 8px;
+}
+.mAboutMe__content p {
+  opacity: 0.88;
+  font-size: 18px;
+  line-height: 32px;
+}
+.mAboutMe__content p:not(:first-child) {
+  margin: 32px 0;
+}
+
+.mSocial {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 56px;
+}
+.mSocial__heading {
+  margin-bottom: 24px;
+}
+.mSocial__heading h5 {
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFC226;
+}
+.mSocial ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.mSocial ul li {
+  margin-right: 32px;
+}
+.mSocial ul li a, .mSocial ul li a svg path {
+  transition: 0.2s ease-in-out;
+}
+.mSocial ul li a:hover svg path {
+  fill: #FF7272;
+}
+
+@media screen and (min-width: 748px) {
+  .mAboutMe__image {
+    min-width: 540px;
+    height: 400px;
+    margin: 0;
+  }
+  .mAboutMe__container {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .mButton {
+    padding: 12px 24px;
+  }
+  .mButton__text {
+    position: relative;
+    z-index: 1;
+    color: #1E44D4;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+  .mHeader {
+    padding: 24px 0;
+  }
+
+  .mAboutMe__image {
+    min-width: auto;
+    height: auto;
+    position: sticky;
+    top: 40px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .mHeader {
+    padding: 36px 0;
+  }
+
+  .mAboutMe {
+    margin-top: 40px;
+    margin-bottom: 56px;
+  }
+  .mAboutMe__image {
+    min-width: 540px;
+  }
+  .mAboutMe__heading {
+    margin-bottom: 40px;
+  }
+  .mAboutMe__heading h1 {
+    font-size: 64px;
+    line-height: 68px;
+  }
+}
