@@ -1,6 +1,6 @@
 // Next Components
 import Link from "next/link";
-import ButtonLink from "../components/buttonLink";
+import ButtonLink from "../components/ButtonLink";
 
 // Styles
 import styles from "../styles/components/HeaderNav.module.scss";
@@ -43,6 +43,7 @@ export default function HeaderNav() {
         <ButtonLink
           label="oi@felipemarcon.com.br"
           link="mailto:oi@felipemarcon.com.br"
+          size="md"
         />
       </div>
     </nav>

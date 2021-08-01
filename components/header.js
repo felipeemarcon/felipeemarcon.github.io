@@ -3,9 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Components
-import Container from "../components/container";
+import Container from "../components/Container";
 import Grid from "../components/Grid";
-import HeaderNav from "../components/headerNav";
+import HeaderNav from "../components/HeaderNav";
 
 import styles from "../styles/components/Header.module.scss";
 

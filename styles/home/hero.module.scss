@@ -63,7 +63,7 @@
   }
 
   @include for-tablet-up() {
-    padding-top: 32px;
+    padding: 32px 0 52px;
 
     .left {
       grid-column: 1 / span 8;
