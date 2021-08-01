@@ -8,9 +8,11 @@
 
   @include for-tablet-up() {
     grid-template-columns: repeat(8, 1fr);
+    gap: 0 24px;
   }
 
   @include for-desktop-up() {
     grid-template-columns: repeat(12, 1fr);
+    gap: 0 32px;
   }
 }

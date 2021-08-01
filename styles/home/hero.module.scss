@@ -1,0 +1,92 @@
+@import 'mixins';
+
+.hero {
+
+  .left {
+    grid-column: 1 / span 4;
+  }
+
+  .greeting {
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: rgba(36, 37, 44, 0.48);
+    font-size: 18px;
+  }
+
+  .heading {
+    margin-bottom: 40px;
+
+    h2 {
+      font-size: 40px;
+      line-height: 140%;
+      font-weight: 800;
+
+      span {
+        color: var(--color-brand-primary);
+      }
+    }
+  }
+
+  .description {
+    max-width: 592px;
+
+    p {
+      font-size: 18px;
+      line-height: 30px;
+      font-weight: 400;
+      opacity: 0.72;
+    }
+  }
+
+  .contact {
+    margin: 32px 0;
+    font-size: 18px;
+    line-height: 32px;
+
+    > span {
+      opacity: 0.88;
+      font-weight: 500;
+      margin-right: 8px;
+    }
+  }
+
+  .action {
+    position: relative;
+    z-index: 2;
+  }
+
+  .image {
+    margin-top: 48px;
+    display: flex;
+    justify-content: flex-end;
+    justify-self: end;
+  }
+
+  @include for-tablet-up() {
+    padding-top: 32px;
+
+    .left {
+      grid-column: 1 / span 8;
+    }
+
+    .right {
+      grid-column: 5 / span 8;
+    }
+
+    .greeting, .description p {
+      font-size: 20px;
+    }
+
+    .description p {
+      line-height: 32px;
+    }
+
+    .contact {
+      margin: 48px 0;
+    }
+
+    .image {
+      margin-top: 0;
+    }
+  }
+}

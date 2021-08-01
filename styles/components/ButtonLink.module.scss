@@ -1,6 +1,5 @@
 .buttonLink {
   color: var(--color-brand-tertiary);
-  font-size: 20px;
   line-height: 160%;
   font-weight: 500;
   display: inline-flex;
@@ -14,5 +13,21 @@
     width: 100%;
     height: 2px;
     background-color: var(--color-brand-tertiary);
+  }
+
+  &Small {
+    font-size: 16px;
+  }
+
+  &Medium {
+    font-size: 20px;
+  }
+
+  &Blue {
+    color: var(--color-brand-primary);
+
+    &::before {
+      background-color: var(--color-brand-primary);
+    }
   }
 }

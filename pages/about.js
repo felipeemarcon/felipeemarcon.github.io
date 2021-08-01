@@ -1,9 +1,10 @@
 import Head from "next/head";
 
+// Sites Components
 import Header from "../components/header";
 
-import Section from "../components/section";
-import Container from "../components/container";
+// Sections
+import HomeHero from "../components/Home/HomeHero";
 
 export default function About() {
   return (
@@ -17,12 +18,7 @@ export default function About() {
       </Head>
 
       <Header />
-
-      <Section>
-        <Container>
-          <h1>About</h1>
-        </Container>
-      </Section>
+      <HomeHero />
     </>
   );
 }

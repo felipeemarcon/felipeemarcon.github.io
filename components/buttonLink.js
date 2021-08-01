@@ -1,11 +1,28 @@
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
 // Styles
 import styles from "../styles/components/ButtonLink.module.scss";
 
-export default function ButtonLink({ link, label }) {
+export default function ButtonLink({
+  link,
+  label,
+  size = "sm",
+  color = "blue",
+}) {
+  const sizesClasses = classNames(styles.buttonLink, {
+    [`${styles.buttonLinkSmall}`]: size == "sm",
+    [`${styles.buttonLinkMedium}`]: size == "md",
+  });
+
+  const colorClasses = classNames({
+    [styles.buttonLinkBlue]: color == "blue",
+  });
+
+  const classes = `${sizesClasses} ${colorClasses}`;
+
   return (
-    <a className={styles.buttonLink} href={link}>
+    <a className={classes} href={link}>
       {label}
     </a>
   );

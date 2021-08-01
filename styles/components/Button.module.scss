@@ -1,0 +1,19 @@
+.button {
+  border: none;
+  padding: 12px 24px;
+  background-color: var(--color-brand-primary);
+  font-family: var(--font-primary);
+  font-size: 18px;
+  transition: var(--transition-default);
+  cursor: pointer;
+
+  .label {
+    line-height: 30px;
+    font-weight: 600;
+    color: var(--color-neutral-white);
+  }
+
+  &:hover {
+    background-color: var(--color-brand-secondary);
+  }
+}
