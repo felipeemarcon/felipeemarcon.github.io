@@ -1,0 +1,36 @@
+[
+  {
+    "link": "/#",
+    "title": "Gamers Club Fantasy Game",
+    "date": "Jul 2020",
+    "company": "Gamers Club",
+    "tags": ["esports", "user interface", "visual design", "user experience"]
+  },
+  {
+    "link": "/#",
+    "title": "Subscription Off-boarding Flow",
+    "date": "Jul 2020",
+    "company": "Gamers Club",
+    "tags": [
+      "plataform",
+      "esports",
+      "user interface",
+      "visual design",
+      "user experience"
+    ]
+  },
+  {
+    "link": "/#",
+    "title": "Facens - 2019 College Entrance Exam",
+    "date": "Jul 2020",
+    "company": "Atua Agência",
+    "tags": [
+      "university",
+      "education",
+      "user interface",
+      "visual design",
+      "user experience",
+      "frontend"
+    ]
+  }
+]

@@ -5,6 +5,7 @@ import Header from "../components/header";
 
 // Sections
 import HomeHero from "../components/Home/HomeHero";
+import HomeProjects from "../components/Home/HomeProjects";
 
 export default function About() {
   return (
@@ -19,6 +20,7 @@ export default function About() {
 
       <Header />
       <HomeHero />
+      <HomeProjects />
     </>
   );
 }
