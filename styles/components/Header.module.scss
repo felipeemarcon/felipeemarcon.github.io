@@ -1,0 +1,24 @@
+.header {
+  background-color: #F6F6F7;
+  width: 100%;
+  padding: 20px 0;
+  min-height: 96px;
+}
+
+.brand {
+  grid-column: 1 / span 1;
+  position: relative;
+  z-index: 10;
+}
+
+.navTrigger {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #2958FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 4 / 4;
+  justify-self: end;
+}

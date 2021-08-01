@@ -1,0 +1,16 @@
+@import 'mixins';
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 0 16px;
+  grid-template-columns: repeat(4, 1fr);
+
+  @include for-tablet-up() {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include for-desktop-up() {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
