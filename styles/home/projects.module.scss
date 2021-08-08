@@ -2,3 +2,7 @@
  padding: 110px 0;
  background-color: #000;
 }
+
+.list {
+  grid-column: 1 / span 12;
+}
