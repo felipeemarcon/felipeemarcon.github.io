@@ -6,6 +6,7 @@ import Header from "../components/header";
 // Sections
 import HomeHero from "../components/Home/HomeHero";
 import HomeProjects from "../components/Home/HomeProjects";
+import AboutMe from "../components/Home/AboutMe";
 
 // Styles
 import styles from "../styles/home/general.module.scss";
@@ -25,6 +26,7 @@ export default function About() {
       <HomeHero />
       <div className={styles.darkArea}>
         <HomeProjects />
+        <AboutMe />
       </div>
     </>
   );
