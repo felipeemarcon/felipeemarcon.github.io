@@ -1,8 +1,12 @@
 .projectsSection {
  padding: 110px 0;
- background-color: #000;
 }
 
-.list {
+.list, .moreProjects {
   grid-column: 1 / span 12;
+}
+
+.moreProjects {
+  margin-top: 64px;
+  color: rgba(#fff, 0.64);
 }

@@ -7,6 +7,9 @@ import Header from "../components/header";
 import HomeHero from "../components/Home/HomeHero";
 import HomeProjects from "../components/Home/HomeProjects";
 
+// Styles
+import styles from "../styles/home/general.module.scss";
+
 export default function About() {
   return (
     <>
@@ -20,7 +23,9 @@ export default function About() {
 
       <Header />
       <HomeHero />
-      <HomeProjects />
+      <div className={styles.darkArea}>
+        <HomeProjects />
+      </div>
     </>
   );
 }

@@ -8,83 +8,112 @@
   &:not(:last-child) {
     margin-bottom: 64px;
   }
-}
 
-.container {
-  flex-basis: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.content {
-  flex-basis: 100%;
-}
-
-.link {
-  display: flex;
-  flex-basis: 100%;
-  align-items: center;
-  padding-bottom: 64px;
-}
-
-.title {
-  h3 {
-    font-family: var(--font-secondary);
-    font-size: 32px;
-    line-height: 160%;
-    color: var(--color-neutral-white);
-    font-weight: 900;
-  }
-}
-
-.infos, .tags ul {
-  display: flex;
-  gap: 16px;
-}
-
-.infos {
-  margin-top: 4px;
-  span {
-    color: var(--color-neutral-white);
+  .container {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .company {
-    color: var(--color-brand-tertiary);
+  .content {
+    flex-basis: 100%;
   }
-}
 
-.tags {
-  margin-top: 40px;
+  .link {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    padding-bottom: 64px;
+  }
 
-  ul {
-    list-style: none;
-    flex-direction: column;
-
-
-    li {
-     color: rgba(#fff, 0.64);
+  .title {
+    h3 {
+      font-family: var(--font-secondary);
+      font-size: 32px;
+      line-height: 160%;
+      color: var(--color-neutral-white);
+      font-weight: 900;
+      transition: var(--transition-default);
     }
   }
 
-  @include for-tablet-up() {
+  .infos, .tags ul {
+    display: flex;
+    gap: 16px;
+  }
+
+  .infos {
+    margin-top: 4px;
+    span {
+      color: var(--color-neutral-white);
+    }
+
+    .company {
+      color: var(--color-brand-tertiary);
+    }
+  }
+
+  .tags {
+    margin-top: 40px;
+
     ul {
-      flex-direction: row;
+      list-style: none;
+      flex-direction: column;
+
+
+      li {
+       color: rgba(#fff, 0.64);
+      }
+    }
+
+    @include for-tablet-up() {
+      ul {
+        flex-direction: row;
+      }
+    }
+
+    @include for-tablet-only() {
+      li {
+        font-size: 16px;
+        line-height: 24px;
+      }
     }
   }
 
-  @include for-tablet-only() {
-    li {
-      font-size: 16px;
-      line-height: 24px;
+  .iconLink {
+    display: none;
+
+    @include for-desktop-up() {
+      display: block;
+      opacity: 0.16;
+      transition: var(--transition-default);
+
+      svg path {
+        transition: var(--transition-default);
+      }
     }
   }
-}
 
-.iconLink {
-  display: none;
+  &:hover {
+    $hover_color: var(--color-brand-secondary);
 
-  @include for-desktop-up() {
-    display: block;
+    .title h3 {
+      color: $hover_color;
+    }
+
+    .iconLink {
+      opacity: 1;
+
+      svg {
+        path {
+
+          &.iconLinkArrow {
+            transform: translate(4px, -4px);
+          }
+        }
+      }
+    }
   }
+
 }

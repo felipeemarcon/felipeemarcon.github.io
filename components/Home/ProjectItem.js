@@ -48,6 +48,7 @@ export default function ProjectItem({ data }) {
                 fill="white"
               />
               <path
+                className={styles.iconLinkArrow}
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M47.8059 14.3H39.2V9.5H56V26.3H51.2V17.6941L28.8971 39.9971L25.5029 36.6029L47.8059 14.3Z"
