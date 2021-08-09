@@ -9,15 +9,21 @@ import styles from "../../styles/home/projectItem.module.scss";
 import IconExternalLink from "../../public/images/profile_image.jpg";
 
 export default function ProjectItem({ data }) {
-  const { link, title, date, company, tags } = data;
+  const { link, title, date, company, tags, isExternal = false } = data;
 
   return (
     <article className={styles.item}>
       <div className={styles.container}>
-        <a href={link} className={styles.link}>
+        <a
+          href={link}
+          className={styles.link}
+          target="_blank"
+          rel="external noreferrer"
+        >
           <div className={styles.content}>
             <div className={styles.heading}>
               <div className={styles.title}>
+                <span>{isExternal}</span>
                 <h3>{title}</h3>
               </div>
               <div className={styles.infos}>

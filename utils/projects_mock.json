@@ -1,13 +1,14 @@
 [
   {
-    "link": "/#",
+    "link": "https://www.behance.net/gallery/103592439/Fantasy-Game-Bolao-Gamers-Club",
     "title": "Gamers Club Fantasy Game",
     "date": "Jul 2020",
     "company": "Gamers Club",
-    "tags": ["esports", "user interface", "visual design", "user experience"]
+    "tags": ["esports", "user interface", "visual design", "user experience"],
+    "isExternal": true
   },
   {
-    "link": "/#",
+    "link": "https://medium.com/gamersclub/projetando-um-fluxo-de-cancelamento-de-assinaturas-6159874087d2",
     "title": "Subscription Off-boarding Flow",
     "date": "Jul 2020",
     "company": "Gamers Club",
@@ -17,10 +18,11 @@
       "user interface",
       "visual design",
       "user experience"
-    ]
+    ],
+    "isExternal": true
   },
   {
-    "link": "/#",
+    "link": "https://www.behance.net/gallery/83146235/Landing-Page-FACENS-Vestibular-2019",
     "title": "Facens - 2019 College Entrance Exam",
     "date": "Jul 2020",
     "company": "Atua Agência",
@@ -31,6 +33,7 @@
       "visual design",
       "user experience",
       "frontend"
-    ]
+    ],
+    "isExternal": true
   }
 ]
