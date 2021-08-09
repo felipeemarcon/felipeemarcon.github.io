@@ -6,12 +6,19 @@
   position: relative;
   transition: var(--transition-default);
 
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
   &::before, &::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
     height: 2px;
+    transform: translateX(-50%);
+    will-change: transform;
     transition: var(--transition-default);
   }
 
@@ -21,13 +28,23 @@
   }
 
   &::after {
-    width: 0;
+    width: 104%;
+    height: 100%;
+    opacity: 0;
+    transform-origin: 50% 100%;
+    transform: scale3d(1, 0, 1) translateX(-50%);
     background-color: var(--color-brand-secondary);
   }
 
   &:hover {
+    &::before {
+      background-color: var(--color-brand-secondary);
+      width: 104%;
+    }
+
     &::after {
-      width: 100%;
+      transform: scale3d(1, 1, 1) translateX(-50%);
+      opacity: 0.08;
     }
   }
 

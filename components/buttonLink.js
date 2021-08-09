@@ -18,7 +18,7 @@ export default function ButtonLink({ link, label, size, color = "blue" }) {
 
   return (
     <a className={classes} href={link}>
-      {label}
+      <span>{label}</span>
     </a>
   );
 }
