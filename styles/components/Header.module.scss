@@ -17,6 +17,10 @@
   position: relative;
   z-index: 10;
 
+  a {
+    display: flex;
+  }
+
   @include for-desktop-up() {
     width: 56px;
   }
