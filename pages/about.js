@@ -8,6 +8,7 @@ import HomeHero from "../components/Home/HomeHero";
 import HomeProjects from "../components/Home/HomeProjects";
 import AboutMe from "../components/Home/AboutMe";
 import Works from "../components/Home/Works";
+import Footer from "../components/Footer";
 
 // Styles
 import styles from "../styles/home/general.module.scss";
@@ -29,6 +30,7 @@ export default function About() {
         <HomeProjects />
         <AboutMe />
         <Works />
+        <Footer />
       </div>
     </>
   );
