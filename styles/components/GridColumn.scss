@@ -1,0 +1,12 @@
+.GridColumn {
+  &__col {
+    display: flex;
+
+    @for $col from 1 to 13 {
+      &--#{$col} {
+        grid-column: 1 / span $col;
+      }
+    }
+  }
+
+}
