@@ -9,11 +9,14 @@ import Text from "./Text";
 // Styles
 import styles from "../styles/components/Footer.module.scss";
 
+// Images
+import BadgeImage from "../public/images/badge_projects.svg";
+
 export default function Footer() {
   return (
     <Section>
       <Container>
-        <Grid>
+        <Grid customClass={styles.grid}>
           <div className={styles.left}>
             <div className={styles.heading}>
               <div className={styles.title}>
@@ -35,6 +38,11 @@ export default function Footer() {
                 Get in touch:{" "}
                 <ButtonLink label="oi@felipemarcon.com.br" color="yellow" />
               </Text>
+            </div>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.badge}>
+              <BadgeImage />
             </div>
           </div>
         </Grid>

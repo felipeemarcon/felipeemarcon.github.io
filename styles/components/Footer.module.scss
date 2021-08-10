@@ -1,8 +1,38 @@
-.left {
+@import "../mixins";
+
+.grid {
+  grid-template-rows: max-content 1fr;
+}
+
+.left, .right {
   grid-column: 1 / span 4;
+
+  @include for-tablet-up() {
+    grid-column: 1 / span 8;
+  }
+}
+
+.left {
+  grid-row: 2;
+
+  @include for-desktop-up() {
+    grid-row: 1;
+    grid-area: 1/ 1 / auto / span 8;
+  }
+}
+
+.right {
+  grid-row: 1;
+
+  @include for-desktop-up() {
+    grid-row: 2;
+    grid-area: 1/ 9 / auto / span 11;
+  }
 }
 
 .heading {
+  grid-row: 2;
+
   .title {
     margin-bottom: 24px;
 
@@ -20,4 +50,41 @@
 
 .contact {
   margin: 64px 0;
+}
+
+.badge {
+  margin-bottom: 64px;
+
+  svg {
+    width: 142px;
+    height: 142px;
+    will-change: transform;
+    animation: spin 16s linear infinite;
+  }
+
+  @include for-desktop-up() {
+    width: 100%;
+    display: flex;
+    margin-bottom: 0;
+
+    svg {
+      margin: 0 auto;
+      width: 260px;
+      height: 260px;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
