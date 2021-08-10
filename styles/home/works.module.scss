@@ -1,0 +1,16 @@
+.worksSection {
+  padding: 64px 0;
+}
+
+.heading, .items {
+  grid-column: 1 / span 4;
+}
+
+.heading {
+
+  margin-bottom: 48px;
+
+  h3 span {
+    color: var(--color-brand-tertiary);
+  }
+}

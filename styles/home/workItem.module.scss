@@ -1,0 +1,30 @@
+.item {
+  padding: 32px;
+  border: 1px solid rgba(#fff, 0.16);
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  margin-bottom: 40px;
+}
+
+.role {
+  font-size: 16px;
+  color: rgba(#fff, 0.48);
+}
+
+.description {
+  margin-bottom: 32px;
+
+  p {
+    font-size: 16px;
+    color: var(--color-neutral-white);
+    opacity: 0.64;
+  }
+}
+
+.period {
+  color: var(--color-brand-tertiary);
+  font-size: 14px;
+}
