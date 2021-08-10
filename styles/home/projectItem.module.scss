@@ -63,7 +63,7 @@
 
 
       li {
-       color: rgba(#fff, 0.64);
+        color: rgba(#fff, 0.64);
       }
     }
 
@@ -74,7 +74,11 @@
     }
 
     @include for-tablet-only() {
-      li {
+      ul li {
+        max-width: 130px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         font-size: 16px;
         line-height: 24px;
       }
@@ -84,7 +88,7 @@
   .iconLink {
     display: none;
 
-    @include for-desktop-up() {
+    @include for-tablet-up() {
       display: block;
       opacity: 0.16;
       transition: var(--transition-default);
