@@ -5,6 +5,12 @@ $sizes: (
   "xl": 28px,
 );
 
+$weights: (
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600
+);
+
 .onLight {
   color: var(--color-brand-dark);
 }
@@ -19,6 +25,8 @@ $sizes: (
   }
 }
 
-// .xl {
-//   line-height: 160%;
-// }
+@each $weight, $value in $weights {
+  .#{$weight} {
+    font-weight: $value;
+  }
+}
