@@ -1,9 +1,15 @@
+@import "../mixins";
+
 .worksSection {
   padding: 64px 0;
+
+  @include for-desktop-up() {
+    padding: 116px 0;
+  }
 }
 
 .heading, .items {
-  grid-column: 1 / span 4;
+  grid-column: 1 / span 8;
 }
 
 .heading {
@@ -12,5 +18,19 @@
 
   h3 span {
     color: var(--color-brand-tertiary);
+  }
+
+  @include for-desktop-up() {
+    margin-bottom: 64px;
+    // grid-area: 1 / 1 / auto / span 3;
+    grid-column: 1 / span 12;
+  }
+}
+
+.items {
+  @include for-desktop-up() {
+    // grid-area: 1 / 4 / auto / span 12;
+    grid-column: 1 / span 12;
+    display: flex;
   }
 }
