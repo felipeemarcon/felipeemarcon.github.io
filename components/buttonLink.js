@@ -12,6 +12,7 @@ export default function ButtonLink({ link, label, size, color = "blue" }) {
 
   const colorClasses = classNames({
     [styles.buttonLinkBlue]: color == "blue",
+    [styles.buttonLinkRed]: color == "red",
   });
 
   const classes = `${sizesClasses} ${colorClasses}`;

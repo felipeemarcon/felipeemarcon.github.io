@@ -10,6 +10,5 @@ export default function GridColumn({ columns, children }) {
 }
 
 GridColumn.propTypes = {
-  columns: PropTypes.number,
-  children: PropTypes.elementType,
+  columns: PropTypes.number.isRequired,
 };
