@@ -2,7 +2,6 @@
 
 .grid {
   display: grid;
-  align-items: center;
   gap: 0 16px;
   grid-template-columns: repeat(4, 1fr);
 
@@ -15,4 +14,8 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 0 32px;
   }
+}
+
+.alignHorizontal {
+  align-items: center;
 }

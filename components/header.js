@@ -16,19 +16,20 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Container>
-        <Grid>
+        <Grid alignHorizontal={true}>
           <div className={styles.brand}>
             <Link href="/">
               <a>
-                <Image src={BrandSymbol} alt="Felipe Marcon Brand Symbol" />
+                {/* <Image src={BrandSymbol} alt="Felipe Marcon Brand Symbol" /> */}
+                <BrandSymbol />
               </a>
             </Link>
           </div>
-
           <HeaderNav />
 
           <div className={styles.navTrigger}>
-            <Image src={NavMenuLines} alt="Click to open the site's menu" />
+            {/* <Image src={NavMenuLines} alt="Click to open the site's menu" /> */}
+            <NavMenuLines />
           </div>
         </Grid>
       </Container>
