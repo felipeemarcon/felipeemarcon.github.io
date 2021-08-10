@@ -1,0 +1,21 @@
+$headings: (
+  "h1": 72px,
+  "h2": 48px,
+  "h3": 40px,
+  "h4": 32px,
+  "h5": 24px,
+  "h6": 20px
+);
+
+.heading {
+  .text {
+    color: var(--color-neutral-white);
+    line-height: 130%;
+  }
+
+  @each $heading, $value in $headings {
+    #{$heading} {
+      font-size: $value;
+    }
+  }
+}
