@@ -1,6 +1,3 @@
-// NextJS Components
-import Image from "next/image";
-
 // Sites Components
 import Section from "../../components/Section";
 import Container from "../../components/Container";
@@ -9,7 +6,6 @@ import ButtonLink from "../../components/ButtonLink";
 import Button from "../../components/Button";
 
 import heroStyles from "../../styles/home/hero.module.scss";
-import profileImage from "../../public/images/profile_image.jpg";
 
 export default function HomeHero() {
   return (
@@ -45,11 +41,6 @@ export default function HomeHero() {
                   <Button label="Check my work" />
                 </div>
               </div>
-            </div>
-            <div className={heroStyles.right}>
-              {/* <div className={heroStyles.image}>
-                <Image src={profileImage} alt="" />
-              </div> */}
             </div>
           </Grid>
         </div>
