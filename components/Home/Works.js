@@ -5,10 +5,15 @@ import Grid from "../Grid";
 import Heading from "../Heading";
 import WorkItem from "./WorkItem";
 
+// Content Mock
+import worksDataMock from "../../utils/works_data_mock.json";
+
 // Styles
 import styles from "../../styles/home/works.module.scss";
 
 export default function Works() {
+  const works = worksDataMock;
+
   return (
     <Section customClass={styles.worksSection}>
       <Container>
@@ -19,7 +24,9 @@ export default function Works() {
             </Heading>
           </div>
           <div className={styles.items}>
-            <WorkItem />
+            {works.map((work, index) => (
+              <WorkItem key={index} data={work} />
+            ))}
           </div>
         </Grid>
       </Container>
