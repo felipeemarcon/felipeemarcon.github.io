@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 
+// Styles
 import styles from "../styles/components/Button.module.scss";
 
 export default function Button({ link, label }) {
