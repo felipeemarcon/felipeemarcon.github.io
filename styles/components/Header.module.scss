@@ -19,6 +19,13 @@
 
   a {
     display: flex;
+    width: 56px;
+    height: 56px;
+
+    svg {
+      width: 56px;
+      height: 56px;
+    }
   }
 
   @include for-desktop-up() {

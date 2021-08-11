@@ -120,7 +120,17 @@
 
 .credits {
   margin-top: 96px;
-  padding: 20px 0;
+  padding: 20px 0 40px;
+
+  @include for-phone-only() {
+    .left {
+      grid-area: 1/1/auto/span 2;
+    }
+
+    .right {
+      grid-area: 1/2/auto/span 4;
+    }
+  }
 
   @include for-desktop-up() {
     margin-top: 116px;

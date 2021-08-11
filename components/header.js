@@ -1,5 +1,4 @@
 // Next Components
-import Image from "next/image";
 import Link from "next/link";
 
 // Components
@@ -20,7 +19,6 @@ export default function Header() {
           <div className={styles.brand}>
             <Link href="/">
               <a>
-                {/* <Image src={BrandSymbol} alt="Felipe Marcon Brand Symbol" /> */}
                 <BrandSymbol />
               </a>
             </Link>
