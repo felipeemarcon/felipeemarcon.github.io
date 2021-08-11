@@ -32,6 +32,6 @@ export default function Heading({ type, customClass, children }) {
 }
 
 Heading.propTypes = {
-  type: PropTypes.string.isRequired,
+  type: PropTypes.string,
   customClass: PropTypes.string,
 };

@@ -1,5 +1,6 @@
 const config = {
   cms_manual_init: true,
+  publish_mode: "editorial_workflow",
   backend: {
     name: "github",
     repo: "felipeemarcon/felipeemarcon.github.io",
@@ -35,11 +36,6 @@ const config = {
           name: "hero",
           file: "content/home/sections/hero.md",
           fields: [
-            {
-              label: "Hero Title",
-              name: "title",
-              widget: "string",
-            },
             {
               label: "Hero Description",
               name: "description",
