@@ -1,4 +1,4 @@
 ---
-value: oi@felipemarcon.com.br
+value: oi@felipemarcon.com
 type: email
 ---
