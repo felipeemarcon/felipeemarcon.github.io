@@ -1,10 +1,11 @@
-.buttonLink {
+.linkUnderscore {
   color: var(--color-brand-tertiary);
   line-height: 160%;
   font-weight: 500;
   display: inline-flex;
   position: relative;
   transition: var(--transition-default);
+  cursor: pointer;
 
   span {
     position: relative;
@@ -20,6 +21,7 @@
     transform: translateX(-50%);
     will-change: transform;
     transition: var(--transition-default);
+    pointer-events: none;
   }
 
   &::before {
@@ -56,7 +58,7 @@
     font-size: 20px;
   }
 
-  &Blue {
+  &ColorDefault, &ColorBlue {
     color: var(--color-brand-primary);
 
     &::before {
@@ -68,7 +70,7 @@
     }
   }
 
-  &Red {
+  &ColorRed {
     color: var(--color-brand-secondary);
 
     &::before, &::after {
@@ -80,6 +82,22 @@
 
       &::before, &::after {
         background-color: var(--color-brand-tertiary);
+      }
+    }
+  }
+
+  &ColorYellow {
+    color: var(--color-brand-tertiary);
+
+    &::before, &::after {
+      background-color: var(--color-brand-tertiary);
+    }
+
+    &:hover {
+      color: var(--color-brand-primary);
+
+      &::before, &::after {
+        background-color: var(--color-brand-primary);
       }
     }
   }

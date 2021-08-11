@@ -3,7 +3,7 @@ import Section from "../../components/Section";
 import Container from "../../components/Container";
 import Grid from "../../components/Grid";
 import ProjectItem from "../../components/Home/ProjectItem";
-import ButtonLink from "../ButtonLink";
+import LinkUnderscore from "../LinkUnderscore";
 
 // Content Mock
 import projectsMock from "../../utils/projects_mock.json";
@@ -26,12 +26,12 @@ export default function HomeProjects() {
           <div className={styles.moreProjects}>
             <span>
               You can see more projects in my{" "}
-              <ButtonLink
+              <LinkUnderscore
                 label="Behance"
                 link="https://www.behance.net/felipeemarcon"
               />{" "}
               or{" "}
-              <ButtonLink
+              <LinkUnderscore
                 label="Dribbble"
                 link="https://dribbble.com/felipee_marcon"
               />

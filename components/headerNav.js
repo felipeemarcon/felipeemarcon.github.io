@@ -1,6 +1,6 @@
 // Next Components
 import Link from "next/link";
-import ButtonLink from "../components/ButtonLink";
+import LinkUnderscore from "../components/LinkUnderscore";
 
 // Styles
 import styles from "../styles/components/HeaderNav.module.scss";
@@ -40,7 +40,7 @@ export default function HeaderNav() {
       {renderNavMenu(navMenuItems)}
 
       <div className={styles.email}>
-        <ButtonLink
+        <LinkUnderscore
           label="oi@felipemarcon.com.br"
           link="mailto:oi@felipemarcon.com.br"
           size="md"

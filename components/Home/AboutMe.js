@@ -7,7 +7,7 @@ import Container from "../Container";
 import Grid from "../Grid";
 import Heading from "../Heading";
 import GridColumn from "../GridColumn";
-import ButtonLink from "../ButtonLink";
+import LinkUnderscore from "../LinkUnderscore";
 
 // Styles
 import styles from "../../styles/home/aboutMe.module.scss";
@@ -95,7 +95,7 @@ export default function AboutMe() {
                 <p>
                   In my spare time I play guitar. I’m a member of a Hardcore
                   band as guitar player,{" "}
-                  <ButtonLink label="check it out" link="#" color="red" />.
+                  <LinkUnderscore label="check it out" link="#" color="red" />.
                   Music makes me a better person and is where I can make any
                   crazy idea just because I love it.
                 </p>

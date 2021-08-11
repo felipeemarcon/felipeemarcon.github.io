@@ -2,7 +2,7 @@
 import Section from "../../components/Section";
 import Container from "../../components/Container";
 import Grid from "../../components/Grid";
-import ButtonLink from "../../components/ButtonLink";
+import LinkUnderscore from "../../components/LinkUnderscore";
 import Button from "../../components/Button";
 
 import heroStyles from "../../styles/home/hero.module.scss";
@@ -31,7 +31,7 @@ export default function HomeHero() {
                 </div>
                 <div className={heroStyles.contact}>
                   <span>How can I help you?</span>
-                  <ButtonLink
+                  <LinkUnderscore
                     label="oi@felipemarcon.com.br"
                     link="mailto:oi@felipemarcon.com.br"
                     size="md"

@@ -5,7 +5,7 @@ import Section from "./Section";
 import Container from "./Container";
 import Grid from "./Grid";
 import Heading from "./Heading";
-import ButtonLink from "./ButtonLink";
+import LinkUnderscore from "./LinkUnderscore";
 import Text from "./Text";
 
 // Styles
@@ -61,7 +61,10 @@ export default function Footer() {
               <div className={styles.contact}>
                 <Text theme="onDark" tag="span">
                   Get in touch:{" "}
-                  <ButtonLink label="oi@felipemarcon.com.br" color="yellow" />
+                  <LinkUnderscore
+                    label="oi@felipemarcon.com.br"
+                    color="yellow"
+                  />
                 </Text>
               </div>
               <div className={styles.social}>
