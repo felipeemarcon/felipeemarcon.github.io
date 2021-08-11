@@ -28,11 +28,11 @@ export default function HomeHero() {
               </div>
               <div className={heroStyles.content}>
                 <div className={heroStyles.description}>
-                  <p>
+                  <Text>
                     I am a Product Designer and I love to develop experiences
                     and help people and companies through good design. In my
                     spare time I play music with some friends.
-                  </p>
+                  </Text>
                 </div>
                 <div className={heroStyles.contact}>
                   <Text tag="span" customClass={heroStyles.contact_label}>

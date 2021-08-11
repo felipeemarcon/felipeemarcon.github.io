@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import PropTypes from "prop-types";
 
 // Styles
 import styles from "../styles/components/Heading.module.scss";
@@ -31,6 +32,6 @@ export default function Heading({ type, customClass, children }) {
 }
 
 Heading.propTypes = {
-  type: PropTypes.string,
+  type: PropTypes.string.isRequired,
   customClass: PropTypes.string,
 };
