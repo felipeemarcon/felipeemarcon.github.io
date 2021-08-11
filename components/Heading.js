@@ -29,3 +29,8 @@ export default function Heading({ type, customClass, children }) {
 
   return <div className={styles.heading}>{handleRenderHeading()}</div>;
 }
+
+Heading.propTypes = {
+  type: PropTypes.string,
+  customClass: PropTypes.string,
+};

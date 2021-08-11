@@ -26,11 +26,11 @@ export default function LinkUnderscore({
   const classes = `${sizesClasses} ${colorClasses}`;
 
   const handleOpenNewTab = () => {
-    return newTab && "_blank";
+    return newTab ? "_blank" : null;
   };
 
   const handleRelAttribute = () => {
-    return newTab && rel && rel;
+    return newTab && rel ? rel : null;
   };
 
   return (

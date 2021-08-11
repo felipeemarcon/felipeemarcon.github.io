@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 // Sites Components
-import Header from "../components/header";
+import Header from "../components/Header";
 
 // Sections
 import HomeHero from "../components/Home/HomeHero";
