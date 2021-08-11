@@ -2,9 +2,9 @@
 import Link from "next/link";
 
 // Components
-import Container from "../components/Container";
-import Grid from "../components/Grid";
-import HeaderNav from "../components/HeaderNav";
+import Container from "./Container";
+import Grid from "./Grid";
+import HeaderNav from "./HeaderNav";
 
 import styles from "../styles/components/Header.module.scss";
 
