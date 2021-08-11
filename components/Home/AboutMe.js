@@ -82,7 +82,7 @@ export default function AboutMe() {
             <div className={styles.rightCol}>
               <div className={styles.description}>
                 <p>
-                  My name is Felipe Marcon and I'm a Product Designer with
+                  My name is Felipe Marcon and Im a Product Designer with
                   front-end skills based in Brazil. I’m a fan of music,
                   technology, colors, shapes and experiences.
                 </p>
