@@ -4,7 +4,14 @@ import classNames from "classnames";
 // Styles
 import styles from "../styles/components/LinkUnderscore.module.scss";
 
-export default function LinkUnderscore({ link, label, size, color = "blue" }) {
+export default function LinkUnderscore({
+  link,
+  label,
+  size,
+  color = "blue",
+  newTab = false,
+  rel = "noreferrer",
+}) {
   const sizesClasses = classNames([styles.linkUnderscore], {
     [styles.linkUnderscoreSmall]: size == "sm",
     [styles.linkUnderscoreMedium]: size == "md",
@@ -18,8 +25,21 @@ export default function LinkUnderscore({ link, label, size, color = "blue" }) {
 
   const classes = `${sizesClasses} ${colorClasses}`;
 
+  const handleOpenNewTab = () => {
+    return newTab && "_blank";
+  };
+
+  const handleRelAttribute = () => {
+    return newTab && rel && rel;
+  };
+
   return (
-    <a className={classes} href={link}>
+    <a
+      className={classes}
+      href={link}
+      target={handleOpenNewTab()}
+      rel={handleRelAttribute()}
+    >
       <span>{label}</span>
     </a>
   );
@@ -30,4 +50,5 @@ LinkUnderscore.propTypes = {
   label: PropTypes.string,
   size: PropTypes.string,
   color: PropTypes.string,
+  newTab: PropTypes.bool,
 };

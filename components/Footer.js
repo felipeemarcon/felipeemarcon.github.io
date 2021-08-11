@@ -63,6 +63,7 @@ export default function Footer() {
                   Get in touch:{" "}
                   <LinkUnderscore
                     label="oi@felipemarcon.com.br"
+                    link="mailto:oi@felipemarcon.com.br"
                     color="yellow"
                   />
                 </Text>
