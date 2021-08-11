@@ -16,14 +16,15 @@
   .heading {
     margin-bottom: 40px;
 
-    h2 {
+    .title {
       font-size: 40px;
       line-height: 140%;
       font-weight: 800;
+      color: var(--color-brand-dark);
+    }
 
-      span {
-        color: var(--color-brand-primary);
-      }
+    .title_highlight {
+      color: var(--color-brand-primary);
     }
   }
 
@@ -43,7 +44,7 @@
     font-size: 18px;
     line-height: 32px;
 
-    > span {
+    .contact_label {
       opacity: 0.88;
       font-weight: 500;
       margin-right: 8px;

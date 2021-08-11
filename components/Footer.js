@@ -46,7 +46,8 @@ export default function Footer() {
               <div className={styles.heading}>
                 <div className={styles.title}>
                   <Heading>
-                    Let’s work <span>together?</span>
+                    Let’s work{" "}
+                    <span className={styles.title_highlight}>together?</span>
                   </Heading>
                 </div>
                 <div className={styles.subtitle}>

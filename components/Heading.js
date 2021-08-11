@@ -3,8 +3,10 @@ import classNames from "classnames";
 // Styles
 import styles from "../styles/components/Heading.module.scss";
 
-export default function Heading({ type, children }) {
-  let classes = classNames(styles.text, {});
+export default function Heading({ type, customClass, children }) {
+  let classes = classNames([styles.text], {
+    [customClass]: customClass,
+  });
 
   const handleRenderHeading = () => {
     switch (type) {

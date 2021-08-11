@@ -20,7 +20,7 @@ export default function Works() {
         <Grid>
           <div className={styles.heading}>
             <Heading type="h3">
-              Places I <span>worked</span>
+              Places I <span className={styles.title_highlight}>worked</span>
             </Heading>
           </div>
           <div className={styles.items}>

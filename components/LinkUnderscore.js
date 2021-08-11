@@ -40,7 +40,7 @@ export default function LinkUnderscore({
       target={handleOpenNewTab()}
       rel={handleRelAttribute()}
     >
-      <span>{label}</span>
+      <span className={styles.label}>{label}</span>
     </a>
   );
 }

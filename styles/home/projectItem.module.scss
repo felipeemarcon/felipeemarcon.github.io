@@ -45,7 +45,13 @@
 
   .infos {
     margin-top: 4px;
-    span {
+
+    .info {
+      font-size: 18px;
+      line-height: 130%;
+    }
+
+    .date {
       color: var(--color-neutral-white);
     }
 

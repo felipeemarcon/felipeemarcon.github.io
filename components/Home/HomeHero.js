@@ -4,6 +4,8 @@ import Container from "../../components/Container";
 import Grid from "../../components/Grid";
 import LinkUnderscore from "../../components/LinkUnderscore";
 import Button from "../../components/Button";
+import Text from "../../components/Text";
+import Heading from "../../components/Heading";
 
 import heroStyles from "../../styles/home/hero.module.scss";
 
@@ -16,10 +18,13 @@ export default function HomeHero() {
             <div className={heroStyles.left}>
               <div className={heroStyles.heading}>
                 <div className={heroStyles.greeting}>Hello, there 👋</div>
-                <h2>
-                  I’m <span>Felipe Marcon</span> and I design delightful
-                  experiences.
-                </h2>
+                <Heading type="h1" customClass={heroStyles.title}>
+                  I’m{" "}
+                  <span className={heroStyles.title_highlight}>
+                    Felipe Marcon
+                  </span>{" "}
+                  and I design delightful experiences.
+                </Heading>
               </div>
               <div className={heroStyles.content}>
                 <div className={heroStyles.description}>
@@ -30,7 +35,9 @@ export default function HomeHero() {
                   </p>
                 </div>
                 <div className={heroStyles.contact}>
-                  <span>How can I help you?</span>
+                  <Text tag="span" customClass={heroStyles.contact_label}>
+                    How can I help you?
+                  </Text>
                   <LinkUnderscore
                     label="oi@felipemarcon.com.br"
                     link="mailto:oi@felipemarcon.com.br"

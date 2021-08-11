@@ -43,7 +43,8 @@ export default function AboutMe() {
             <div className={styles.wrapper}>
               <div className={styles.heading}>
                 <Heading type="h2">
-                  A little more <span>about me</span>
+                  A little more{" "}
+                  <span className={styles.title_highlight}>about me</span>
                 </Heading>
               </div>
             </div>
@@ -70,7 +71,7 @@ export default function AboutMe() {
                   <Heading type="h6">
                     Designer, Musician and pizza lover
                   </Heading>
-                  <span>
+                  <span className={styles.photoText}>
                     Fun fact: it’s says “Pizza or die” on my shirt in this photo
                     and I was at Dominos when this photo was taken. I really
                     like pizza. 🍕

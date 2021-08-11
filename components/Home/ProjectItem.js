@@ -27,8 +27,10 @@ export default function ProjectItem({ data }) {
                 <h3>{title}</h3>
               </div>
               <div className={styles.infos}>
-                <span className={styles.date}>{date}</span>
-                <span className={styles.company}>{company}</span>
+                <span className={`${styles.info} ${styles.date}`}>{date}</span>
+                <span className={`${styles.info} ${styles.company}`}>
+                  {company}
+                </span>
               </div>
             </div>
             <div className={styles.tags}>
