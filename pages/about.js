@@ -16,7 +16,7 @@ import Footer from "@components/Footer";
 // Styles
 import styles from "@styles/home/general.module.scss";
 
-export default function About({ projects, socialLinks, ...props }) {
+export default function About({ projects, socialLinks, works, ...props }) {
   return (
     <>
       <Head>
@@ -32,7 +32,7 @@ export default function About({ projects, socialLinks, ...props }) {
       <div className={styles.darkArea}>
         <HomeProjects data={projects} />
         <AboutMe />
-        <Works />
+        <Works works={works} />
         <Footer socialLinks={socialLinks} />
       </div>
     </>
@@ -40,12 +40,13 @@ export default function About({ projects, socialLinks, ...props }) {
 }
 
 export async function getStaticProps() {
-  const filesProjects = fs.readdirSync(`${process.cwd()}/content/projects`);
-  const filesSocialLinks = fs.readdirSync(
+  const projectFiles = fs.readdirSync(`${process.cwd()}/content/projects`);
+  const socialLinksFiles = fs.readdirSync(
     `${process.cwd()}/content/global/socialLinks`
   );
+  const workFiles = fs.readdirSync(`${process.cwd()}/content/works/`);
 
-  const projects = filesProjects.map((filename) => {
+  const projects = projectFiles.map((filename) => {
     const markdownWithMetadata = fs
       .readFileSync(`${process.cwd()}/content/projects/${filename}`)
       .toString();
@@ -62,7 +63,7 @@ export async function getStaticProps() {
     };
   });
 
-  const socialLinks = filesSocialLinks.map((filename) => {
+  const socialLinks = socialLinksFiles.map((filename) => {
     const markdownWithMetadata = fs
       .readFileSync(`${process.cwd()}/content/global/socialLinks/${filename}`)
       .toString();
@@ -79,10 +80,23 @@ export async function getStaticProps() {
     };
   });
 
+  const works = workFiles.map((filename) => {
+    const markdownWithMetadata = fs
+      .readFileSync(`${process.cwd()}/content/works/${filename}`)
+      .toString();
+
+    const { data } = matter(markdownWithMetadata);
+
+    return {
+      data,
+    };
+  });
+
   return {
     props: {
       projects,
       socialLinks,
+      works,
     },
   };
 }
