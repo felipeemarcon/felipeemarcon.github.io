@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import Icon from "@components/Icon";
+
 // Styles
 import styles from "@styles/components/SocialLinks.module.scss";
 
@@ -15,7 +17,9 @@ export default function SocialLinks({ links }) {
                 rel="external noreferrer"
                 className={styles.socialItem}
                 title={label}
-              ></a>
+              >
+                <Icon icon={icon} color="#fff" size={32} />
+              </a>
             </Link>
           </li>
         );
