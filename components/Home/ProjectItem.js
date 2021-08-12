@@ -9,7 +9,21 @@ import styles from "../../styles/home/projectItem.module.scss";
 import IconExternalLink from "../../public/images/profile_image.jpg";
 
 export default function ProjectItem({ data }) {
-  const { link, title, date, company, tags, isExternal = false } = data;
+  const {
+    link,
+    title,
+    date,
+    company,
+    tags,
+    isExternal = false,
+  } = data.frontmatter;
+
+  const tagsIntoArray = () => {
+    let string = tags;
+    const tagsList = string.split(" ");
+
+    return tagsList;
+  };
 
   return (
     <article className={styles.item}>
@@ -35,8 +49,8 @@ export default function ProjectItem({ data }) {
             </div>
             <div className={styles.tags}>
               <ul>
-                {tags.map((tag, index) => (
-                  <li key={index}>#{tag}</li>
+                {tagsIntoArray().map((tag, index) => (
+                  <li key={index}>{tag}</li>
                 ))}
               </ul>
             </div>

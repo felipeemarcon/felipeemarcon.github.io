@@ -7,9 +7,17 @@ import Button from "../../components/Button";
 import Text from "../../components/Text";
 import Heading from "../../components/Heading";
 
+import { attributes as heroAttributes } from "../../content/home/sections/hero.md";
+
+import { attributes as globalAttributes } from "../../content/contact/configs.md";
+
+// Styles
 import heroStyles from "../../styles/home/hero.module.scss";
 
 export default function HomeHero() {
+  const { description } = heroAttributes;
+  const { contact_email } = globalAttributes;
+
   return (
     <Section>
       <Container>
@@ -28,19 +36,15 @@ export default function HomeHero() {
               </div>
               <div className={heroStyles.content}>
                 <div className={heroStyles.description}>
-                  <Text>
-                    I am a Product Designer and I love to develop experiences
-                    and help people and companies through good design. In my
-                    spare time I play music with some friends.
-                  </Text>
+                  <Text>{description}</Text>
                 </div>
                 <div className={heroStyles.contact}>
                   <Text tag="span" customClass={heroStyles.contact_label}>
                     How can I help you?
                   </Text>
                   <LinkUnderscore
-                    label="oi@felipemarcon.com.br"
-                    link="mailto:oi@felipemarcon.com.br"
+                    label={contact_email}
+                    link={`mailto:${contact_email}`}
                     size="md"
                   />
                 </div>
