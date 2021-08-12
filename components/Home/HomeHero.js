@@ -1,18 +1,18 @@
 // Sites Components
-import Section from "../../components/Section";
-import Container from "../../components/Container";
-import Grid from "../../components/Grid";
-import LinkUnderscore from "../../components/LinkUnderscore";
-import Button from "../../components/Button";
-import Text from "../../components/Text";
-import Heading from "../../components/Heading";
+import Section from "@components/Section";
+import Container from "@components/Container";
+import Grid from "@components/Grid";
+import LinkUnderscore from "@components/LinkUnderscore";
+import Button from "@components/Button";
+import Text from "@components/Text";
+import Heading from "@components/Heading";
 
-import { attributes as heroAttributes } from "../../content/home/sections/hero.md";
+import { attributes as heroAttributes } from "@content/home/sections/hero.md";
 
-import { attributes as globalAttributes } from "../../content/contact/configs.md";
+import { attributes as globalAttributes } from "@content/contact/configs.md";
 
 // Styles
-import heroStyles from "../../styles/home/hero.module.scss";
+import heroStyles from "@styles/home/hero.module.scss";
 
 export default function HomeHero() {
   const { description } = heroAttributes;

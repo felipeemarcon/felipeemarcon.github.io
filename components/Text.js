@@ -2,7 +2,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 
 // Styles
-import styles from "../styles/components/Text.module.scss";
+import styles from "@styles/components/Text.module.scss";
 
 const DEFAULT_PARAGRAPH_TEXT =
   "EricMauris laoreet mattis lobortis. Morbi sit amet vulputate ante, id facilisis ligula. Suspendisse lacinia bibendum dolor, vel dictum ipsum varius sit amet. Aliquam elementum fringilla cursus. Phasellus commodo quis ligula vel fermentum. Mauris luctus, arcu a volutpat ultricies, magna odio aliquam ex, eu vestibulum diam turpis ac nulla. Fusce fringilla tincidunt eros eget fermentum. Quisque eget congue lectus. Maecenas posuere sit amet erat sit amet posuere.";

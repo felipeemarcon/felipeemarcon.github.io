@@ -1,8 +1,8 @@
 // Site Components
-import Heading from "../Heading";
+import Heading from "@components/Heading";
 
 // Styles
-import styles from "../../styles/home/workItem.module.scss";
+import styles from "@styles/home/workItem.module.scss";
 
 export default function WorkItem({ data }) {
   const { company, role, summary, period } = data;

@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import classNames from "classnames";
 
 // Styles
-import styles from "../styles/components/LinkUnderscore.module.scss";
+import styles from "@styles/components/LinkUnderscore.module.scss";
 
 export default function LinkUnderscore({
   link,

@@ -2,16 +2,16 @@
 import Link from "next/link";
 
 // Components
-import Container from "./Container";
-import Grid from "./Grid";
-import HeaderNav from "./HeaderNav";
+import Container from "@components/Container";
+import Grid from "@components/Grid";
+import HeaderNav from "@components/HeaderNav";
 
 // Styles
-import styles from "../styles/components/Header.module.scss";
+import styles from "@styles/components/Header.module.scss";
 
 // Images
-import BrandSymbol from "../public/images/brand_symbol.svg";
-import NavMenuLinesIcon from "../public/images/navmenu_lines.svg";
+import BrandSymbol from "@images/brand_symbol.svg";
+import NavMenuLinesIcon from "@images/navmenu_lines.svg";
 
 export default function Header() {
   return (

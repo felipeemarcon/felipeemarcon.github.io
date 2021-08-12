@@ -1,15 +1,15 @@
 // Site Components
-import Section from "../Section";
-import Container from "../Container";
-import Grid from "../Grid";
-import Heading from "../Heading";
-import WorkItem from "./WorkItem";
+import Section from "@components/Section";
+import Container from "@components/Container";
+import Grid from "@components/Grid";
+import Heading from "@components/Heading";
+import WorkItem from "@components/Home/WorkItem";
 
 // Content Mock
-import worksDataMock from "../../utils/works_data_mock.json";
+import worksDataMock from "@utils/works_data_mock.json";
 
 // Styles
-import styles from "../../styles/home/works.module.scss";
+import styles from "@styles/home/works.module.scss";
 
 export default function Works() {
   const works = worksDataMock;
