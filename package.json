@@ -14,7 +14,7 @@
     "classnames": "^2.3.1",
     "gray-matter": "^4.0.3",
     "netlify-cms-app": "^2.15.36",
-    "next": "11.1.0",
+    "next": "^11.1.0",
     "raw-loader": "^4.0.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
