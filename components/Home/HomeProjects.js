@@ -1,15 +1,12 @@
-import fs from "fs";
-import matter from "gray-matter";
-
 // Site Components
-import Section from "../../components/Section";
-import Container from "../../components/Container";
-import Grid from "../../components/Grid";
-import ProjectItem from "../../components/Home/ProjectItem";
-import LinkUnderscore from "../LinkUnderscore";
+import Section from "@components/Section";
+import Container from "@components/Container";
+import Grid from "@components/Grid";
+import ProjectItem from "@components/Home/ProjectItem";
+import LinkUnderscore from "@components/LinkUnderscore";
 
 // Styles
-import styles from "../../styles/home/projects.module.scss";
+import styles from "@styles/home/projects.module.scss";
 
 const HomeProjects = ({ data }) => {
   return (

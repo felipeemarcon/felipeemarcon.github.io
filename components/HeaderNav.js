@@ -1,12 +1,12 @@
 // Next Components
 import Link from "next/link";
-import LinkUnderscore from "../components/LinkUnderscore";
+import LinkUnderscore from "@components/LinkUnderscore";
 
 // Styles
-import styles from "../styles/components/HeaderNav.module.scss";
+import styles from "@styles/components/HeaderNav.module.scss";
 
 // Content
-import { attributes as globalAttributes } from "../content/contact/configs.md";
+import { attributes as globalAttributes } from "@content/contact/configs.md";
 
 export default function HeaderNav() {
   const { contact_email } = globalAttributes;

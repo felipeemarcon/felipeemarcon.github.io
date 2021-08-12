@@ -3,10 +3,10 @@ import React from "react";
 import PropTypes from "prop-types";
 
 // Styles
-import styles from "../../styles/home/projectItem.module.scss";
+import styles from "@styles/home/projectItem.module.scss";
 
 // Images
-import IconExternalLink from "../../public/images/profile_image.jpg";
+import IconExternalLink from "@images/profile_image.jpg";
 
 export default function ProjectItem({ data }) {
   const {

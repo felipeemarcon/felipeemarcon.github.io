@@ -2,18 +2,18 @@
 import Image from "next/image";
 
 // Site Components
-import Section from "../Section";
-import Container from "../Container";
-import Grid from "../Grid";
-import Heading from "../Heading";
-import GridColumn from "../GridColumn";
-import LinkUnderscore from "../LinkUnderscore";
+import Section from "@components/Section";
+import Container from "@components/Container";
+import Grid from "@components/Grid";
+import Heading from "@components/Heading";
+import GridColumn from "@components/GridColumn";
+import LinkUnderscore from "@components/LinkUnderscore";
 
 // Styles
-import styles from "../../styles/home/aboutMe.module.scss";
+import styles from "@styles/home/aboutMe.module.scss";
 
 // Images
-import AboutMeImage from "../../public/images/profile_image_about_me.jpg";
+import AboutMeImage from "@images/profile_image_about_me.jpg";
 
 export default function AboutMe() {
   const shimmer = (w, h) => `

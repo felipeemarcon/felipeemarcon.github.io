@@ -2,7 +2,7 @@ import classNames from "classnames";
 import PropTypes from "prop-types";
 
 // Styles
-import styles from "../styles/components/Grid.module.scss";
+import styles from "@styles/components/Grid.module.scss";
 
 export default function Grid({
   children,

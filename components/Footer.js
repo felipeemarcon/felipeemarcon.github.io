@@ -1,26 +1,24 @@
-import Link from "next/link";
-
 // Site Components
-import Section from "./Section";
-import Container from "./Container";
-import Grid from "./Grid";
-import Heading from "./Heading";
-import LinkUnderscore from "./LinkUnderscore";
-import Text from "./Text";
-import SocialLinks from "./SocialLinks";
+import Section from "@components/Section";
+import Container from "@components/Container";
+import Grid from "@components/Grid";
+import Heading from "@components/Heading";
+import LinkUnderscore from "@components/LinkUnderscore";
+import Text from "@components/Text";
+import SocialLinks from "@components/SocialLinks";
 
 // Styles
-import styles from "../styles/components/Footer.module.scss";
+import styles from "@styles/components/Footer.module.scss";
 
 // Images
-import BadgeImage from "../public/images/badge_projects.svg";
-import IconBehance from "../public/images/icons/Behance.svg";
-import IconDribbble from "../public/images/icons/Dribbble.svg";
-import IconLinkedin from "../public/images/icons/Linkedin.svg";
-import BrandSymbol from "../public/images/brand_symbol.svg";
+import BadgeImage from "@images/badge_projects.svg";
+import IconBehance from "@images/icons/Behance.svg";
+import IconDribbble from "@images/icons/Dribbble.svg";
+import IconLinkedin from "@images/icons/Linkedin.svg";
+import BrandSymbol from "@images/brand_symbol.svg";
 
 // Content
-import { attributes as globalAttributes } from "../content/contact/configs.md";
+import { attributes as globalAttributes } from "@content/contact/configs.md";
 
 export default function Footer({ socialLinks }) {
   const { contact_email } = globalAttributes;

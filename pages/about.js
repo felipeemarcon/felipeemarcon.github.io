@@ -4,17 +4,17 @@ import matter from "gray-matter";
 import Head from "next/head";
 
 // Sites Components
-import Header from "../components/Header";
+import Header from "@components/Header";
 
 // Sections
-import HomeHero from "../components/Home/HomeHero";
-import HomeProjects from "../components/Home/HomeProjects";
-import AboutMe from "../components/Home/AboutMe";
-import Works from "../components/Home/Works";
-import Footer from "../components/Footer";
+import HomeHero from "@components/Home/HomeHero";
+import HomeProjects from "@components/Home/HomeProjects";
+import AboutMe from "@components/Home/AboutMe";
+import Works from "@components/Home/Works";
+import Footer from "@components/Footer";
 
 // Styles
-import styles from "../styles/home/general.module.scss";
+import styles from "@styles/home/general.module.scss";
 
 export default function About({ projects, socialLinks, ...props }) {
   return (
