@@ -147,6 +147,7 @@ const config = {
           date_format: "MMMM YYYY",
           time_format: "",
           format: "LLL",
+          required: false,
         },
       ],
     },

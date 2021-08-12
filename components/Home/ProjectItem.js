@@ -1,12 +1,11 @@
 import React from "react";
-
 import PropTypes from "prop-types";
+
+// Utils
+import formatDateToMonthAndYear from "@utils/formatDateToMonthAndYear";
 
 // Styles
 import styles from "@styles/home/projectItem.module.scss";
-
-// Images
-import IconExternalLink from "@images/profile_image.jpg";
 
 export default function ProjectItem({ data }) {
   const {
@@ -41,7 +40,9 @@ export default function ProjectItem({ data }) {
                 <h3>{title}</h3>
               </div>
               <div className={styles.infos}>
-                <span className={`${styles.info} ${styles.date}`}>{date}</span>
+                <span className={`${styles.info} ${styles.date}`}>
+                  {formatDateToMonthAndYear(date)}
+                </span>
                 <span className={`${styles.info} ${styles.company}`}>
                   {company}
                 </span>
