@@ -8,7 +8,7 @@
       "@pages/*": ["./pages/*"],
       "@public/*": ["./public/*"],
       "@images/*": ["./public/images/*"],
-      "@icons/*": ["./public/images/icons*"],
+      "@icons/*": ["./public/images/icons/*"],
       "@styles/*": ["./styles/*"],
       "@utils/*": ["./utils/*"],
     }
