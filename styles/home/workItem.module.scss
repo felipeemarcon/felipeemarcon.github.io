@@ -2,23 +2,8 @@
 
 .item {
   padding: 32px;
-  border: 1px solid rgba(#fff, 0.16);
   display: flex;
   flex-direction: column;
-
-  @include for-phone-table-only() {
-    &:not(:last-child) {
-      border-bottom: none;
-    }
-  }
-
-  @include for-desktop-up() {
-    border-bottom: 1px solid rgba(#fff, 0.16);
-
-    &:not(:last-child) {
-      border-right: none;
-    }
-  }
 }
 
 .heading {

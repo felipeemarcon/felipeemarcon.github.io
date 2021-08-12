@@ -13,25 +13,45 @@
 }
 
 .heading {
-
   margin-bottom: 48px;
 
   .title_highlight {
     color: var(--color-brand-tertiary);
   }
 
-
   @include for-desktop-up() {
     margin-bottom: 64px;
-    // grid-area: 1 / 1 / auto / span 3;
     grid-column: 1 / span 12;
   }
 }
 
 .items {
   @include for-desktop-up() {
-    // grid-area: 1 / 4 / auto / span 12;
     grid-column: 1 / span 12;
     display: flex;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+}
+
+.swipperSlide {
+  border: 1px solid rgba(#fff, 0.16);
+
+  @include for-phone-table-only() {
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  @include for-desktop-up() {
+    border-bottom: 1px solid rgba(#fff, 0.16);
+
+    &:not(:last-child) {
+      border-right: none;
+    }
   }
 }
