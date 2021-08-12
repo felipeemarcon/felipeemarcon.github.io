@@ -9,7 +9,7 @@ import Heading from "../../components/Heading";
 
 import { attributes as heroAttributes } from "../../content/home/sections/hero.md";
 
-import { attributes as globalAttributes } from "../../content/global/configs.md";
+import { attributes as globalAttributes } from "../../content/contact/configs.md";
 
 // Styles
 import heroStyles from "../../styles/home/hero.module.scss";
@@ -44,7 +44,7 @@ export default function HomeHero() {
                   </Text>
                   <LinkUnderscore
                     label={contact_email}
-                    link={contact_email}
+                    link={`mailto:${contact_email}`}
                     size="md"
                   />
                 </div>

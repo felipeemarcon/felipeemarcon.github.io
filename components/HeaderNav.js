@@ -5,7 +5,12 @@ import LinkUnderscore from "../components/LinkUnderscore";
 // Styles
 import styles from "../styles/components/HeaderNav.module.scss";
 
+// Content
+import { attributes as globalAttributes } from "../content/contact/configs.md";
+
 export default function HeaderNav() {
+  const { contact_email } = globalAttributes;
+
   const navMenuItems = [
     {
       link: "/#work",
@@ -41,8 +46,8 @@ export default function HeaderNav() {
 
       <div className={styles.email}>
         <LinkUnderscore
-          label="oi@felipemarcon.com.br"
-          link="mailto:oi@felipemarcon.com.br"
+          label={contact_email}
+          link={`mailto:${contact_email}`}
           size="md"
         />
       </div>

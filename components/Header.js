@@ -6,10 +6,12 @@ import Container from "./Container";
 import Grid from "./Grid";
 import HeaderNav from "./HeaderNav";
 
+// Styles
 import styles from "../styles/components/Header.module.scss";
 
+// Images
 import BrandSymbol from "../public/images/brand_symbol.svg";
-import NavMenuLines from "../public/images/navmenu_lines.svg";
+import NavMenuLinesIcon from "../public/images/navmenu_lines.svg";
 
 export default function Header() {
   return (
@@ -24,10 +26,8 @@ export default function Header() {
             </Link>
           </div>
           <HeaderNav />
-
           <div className={styles.navTrigger}>
-            {/* <Image src={NavMenuLines} alt="Click to open the site's menu" /> */}
-            <NavMenuLines />
+            <NavMenuLinesIcon />
           </div>
         </Grid>
       </Container>

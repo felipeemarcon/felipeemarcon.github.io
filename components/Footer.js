@@ -7,6 +7,7 @@ import Grid from "./Grid";
 import Heading from "./Heading";
 import LinkUnderscore from "./LinkUnderscore";
 import Text from "./Text";
+import SocialLinks from "./SocialLinks";
 
 // Styles
 import styles from "../styles/components/Footer.module.scss";
@@ -18,24 +19,29 @@ import IconDribbble from "../public/images/icons/Dribbble.svg";
 import IconLinkedin from "../public/images/icons/Linkedin.svg";
 import BrandSymbol from "../public/images/brand_symbol.svg";
 
-export default function Footer() {
-  const socialLinks = [
-    {
-      link: "https://www.behance.net/felipeemarcon",
-      label: "Behance",
-      icon: <IconBehance />,
-    },
-    {
-      link: "https://dribbble.com/felipee_marcon",
-      label: "Dribbble",
-      icon: <IconDribbble />,
-    },
-    {
-      link: "https://www.linkedin.com/in/felipeemarcon/",
-      label: "Linkedin",
-      icon: <IconLinkedin />,
-    },
-  ];
+// Content
+import { attributes as globalAttributes } from "../content/contact/configs.md";
+
+export default function Footer({ socialLinks }) {
+  const { contact_email } = globalAttributes;
+
+  // const socialLinks = [
+  //   {
+  //     link: "https://www.behance.net/felipeemarcon",
+  //     label: "Behance",
+  //     icon: <IconBehance />,
+  //   },
+  //   {
+  //     link: "https://dribbble.com/felipee_marcon",
+  //     label: "Dribbble",
+  //     icon: <IconDribbble />,
+  //   },
+  //   {
+  //     link: "https://www.linkedin.com/in/felipeemarcon/",
+  //     label: "Linkedin",
+  //     icon: <IconLinkedin />,
+  //   },
+  // ];
 
   return (
     <footer>
@@ -63,29 +69,14 @@ export default function Footer() {
                 <Text theme="onDark" tag="span">
                   Get in touch:{" "}
                   <LinkUnderscore
-                    label="oi@felipemarcon.com.br"
-                    link="mailto:oi@felipemarcon.com.br"
+                    label={contact_email}
+                    link={`mailto:${contact_email}`}
                     color="yellow"
                   />
                 </Text>
               </div>
               <div className={styles.social}>
-                <ul className={styles.socialList}>
-                  {socialLinks.map((link, index) => (
-                    <li key={index}>
-                      <Link href={link.link}>
-                        <a
-                          target="_blank"
-                          rel="external noreferrer"
-                          className={styles.socialItem}
-                          title={link.label}
-                        >
-                          {link.icon}
-                        </a>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                <SocialLinks links={socialLinks} />
               </div>
             </div>
             <div className={styles.right}>
