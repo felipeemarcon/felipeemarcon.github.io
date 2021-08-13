@@ -66,12 +66,12 @@ export default function Footer({ socialLinks }) {
         <Container>
           <div className={styles.credits}>
             <Grid customClass={styles.grid}>
-              <div className={styles.left}>
+              <div className={styles.creditsLeft}>
                 <div className={styles.brand}>
                   <BrandSymbol />
                 </div>
               </div>
-              <div className={styles.right}>
+              <div className={styles.creditsRight}>
                 <div className={styles.madeWith}>
                   <Text tag="span" theme="onDark" size="sm">
                     Made with 💛️ in Brazil
