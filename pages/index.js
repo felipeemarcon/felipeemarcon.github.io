@@ -1,77 +1,128 @@
+import fs from "fs";
+import matter from "gray-matter";
+import { locale, useRouter } from "next/router";
+
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+
+// Sites Components
+import Header from "@components/Header";
+
+// Sections
+import HomeHero from "@components/Home/HomeHero";
+import HomeProjects from "@components/Home/HomeProjects";
+import AboutMe from "@components/Home/AboutMe";
+import Works from "@components/Home/Works";
+import Footer from "@components/Footer";
 
 // Styles
-import styles from "@styles/Home.module.css";
+import styles from "@styles/home/general.module.scss";
 
-export default function Home() {
+// Translate
+import { ptBR, enUS } from "../locale/locale";
+
+export default function Home({ projects, socialLinks, works, ...props }) {
+  const router = useRouter();
+  const { locale } = router;
+
+  const translate = locale == "pt-BR" ? ptBR : enUS;
+
+  const handleToggle = () => {
+    switch (locale) {
+      case "pt-BR":
+        router.push("/", "/", { locale: "en-US" });
+        break;
+      case "en-US":
+        router.push("/", "/", { locale: "pt-BR" });
+        break;
+    }
+  };
+
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Felipe Marcon</title>
+        <title>About - Felipe Marcon</title>
         <meta
           name="description"
           content="I am a Product Designer with front-end skills based in Brazil"
         />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <Header />
 
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+      {/* <div>
+        <h2> {translate.greeting} </h2>
+        <p onClick={handleToggle}>{locale}</p>
+      </div> */}
 
-        <Link href="/about">About</Link>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
-    </div>
+      <HomeHero />
+      <div className={styles.darkArea}>
+        <HomeProjects data={projects} />
+        <AboutMe />
+        <Works works={works} />
+        <Footer socialLinks={socialLinks} />
+      </div>
+    </>
   );
+}
+
+export async function getStaticProps() {
+  const projectFiles = fs.readdirSync(`${process.cwd()}/content/projects`);
+  const socialLinksFiles = fs.readdirSync(
+    `${process.cwd()}/content/global/socialLinks`
+  );
+  const workFiles = fs.readdirSync(`${process.cwd()}/content/works/`);
+
+  const projects = projectFiles.map((filename) => {
+    const markdownWithMetadata = fs
+      .readFileSync(`${process.cwd()}/content/projects/${filename}`)
+      .toString();
+
+    const { data } = matter(markdownWithMetadata);
+
+    const frontmatter = {
+      ...data,
+    };
+
+    return {
+      slug: filename.replace(".md", ""),
+      frontmatter,
+    };
+  });
+
+  const socialLinks = socialLinksFiles.map((filename) => {
+    const markdownWithMetadata = fs
+      .readFileSync(`${process.cwd()}/content/global/socialLinks/${filename}`)
+      .toString();
+
+    const { data } = matter(markdownWithMetadata);
+
+    const frontmatter = {
+      ...data,
+    };
+
+    return {
+      slug: filename.replace(".md", ""),
+      frontmatter,
+    };
+  });
+
+  const works = workFiles.map((filename) => {
+    const markdownWithMetadata = fs
+      .readFileSync(`${process.cwd()}/content/works/${filename}`)
+      .toString();
+
+    const { data } = matter(markdownWithMetadata);
+
+    return {
+      data,
+    };
+  });
+
+  return {
+    props: {
+      projects,
+      socialLinks,
+      works,
+    },
+  };
 }
