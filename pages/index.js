@@ -1,6 +1,5 @@
 import fs from "fs";
 import matter from "gray-matter";
-import { locale, useRouter } from "next/router";
 
 import Head from "next/head";
 
@@ -17,26 +16,7 @@ import Footer from "@components/Footer";
 // Styles
 import styles from "@styles/home/general.module.scss";
 
-// Translate
-import { ptBR, enUS } from "../locale/locale";
-
 export default function Home({ projects, socialLinks, works, ...props }) {
-  const router = useRouter();
-  const { locale } = router;
-
-  const translate = locale == "pt-BR" ? ptBR : enUS;
-
-  const handleToggle = () => {
-    switch (locale) {
-      case "pt-BR":
-        router.push("/", "/", { locale: "en-US" });
-        break;
-      case "en-US":
-        router.push("/", "/", { locale: "pt-BR" });
-        break;
-    }
-  };
-
   return (
     <>
       <Head>
@@ -48,11 +28,6 @@ export default function Home({ projects, socialLinks, works, ...props }) {
       </Head>
 
       <Header />
-
-      {/* <div>
-        <h2> {translate.greeting} </h2>
-        <p onClick={handleToggle}>{locale}</p>
-      </div> */}
 
       <HomeHero />
       <div className={styles.darkArea}>
