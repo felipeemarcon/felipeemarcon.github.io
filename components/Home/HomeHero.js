@@ -27,7 +27,7 @@ export default function HomeHero() {
               <div className={heroStyles.heading}>
                 <div className={heroStyles.greeting}>Hello, there 👋</div>
                 <Heading type="h1" customClass={heroStyles.title}>
-                  I’m{" "}
+                  I&apos;m{" "}
                   <span className={heroStyles.title_highlight}>
                     Felipe Marcon
                   </span>{" "}
