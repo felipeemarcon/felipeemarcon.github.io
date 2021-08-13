@@ -76,7 +76,6 @@
   @include for-desktop-up() {
     width: 200px;
   }
-
 }
 
 .swipperSlide {
@@ -89,7 +88,7 @@
   }
 }
 
-.swiperNavigation {
+.swiper_navigation {
   display: flex;
   gap: 0 8px;
   margin-top: 56px;
@@ -99,7 +98,7 @@
   }
 }
 
-.swiperNavigationControl {
+.swiper_navigation_control {
   width: 56px;
   height: 56px;
   display: flex;
@@ -113,7 +112,7 @@
     transition: var(--transition-default);
   }
 
-  &:not(.swiperNavigationDisabled ):hover {
+  &:not(.swiper_navigation_disabled ):hover {
     background-color: var(--color-brand-secondary);
 
     svg path {
@@ -127,7 +126,7 @@
   }
 }
 
-.swiperNavigationDisabled {
+.swiper_navigation_disabled {
   cursor: not-allowed;
   background-color: rgba(#fff, 0.08);
 

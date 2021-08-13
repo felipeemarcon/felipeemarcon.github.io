@@ -28,23 +28,24 @@ export default function Works({ works }) {
             <Heading type="h3">
               Places I <span className={styles.title_highlight}>worked</span>
             </Heading>
-            <div className={styles.swiperNavigation}>
+            <div className={styles.swiper_navigation}>
               <div
                 ref={navigationPrevRef}
-                className={styles.swiperNavigationControl}
+                className={styles.swiper_navigation_control}
               >
-                <Icon icon="arrowLeft" size="32" />
+                <Icon icon="arrowLeft" size={32} />
               </div>
               <div
                 ref={navigationNextRef}
-                className={styles.swiperNavigationControl}
+                className={styles.swiper_navigation_control}
               >
-                <Icon icon="arrowRight" size="32" />
+                <Icon icon="arrowRight" size={32} />
               </div>
             </div>
           </div>
         </Grid>
       </Container>
+
       <div style={{ position: "relative" }}>
         <div className={styles.swiperMask}></div>
         <Container>
@@ -54,7 +55,7 @@ export default function Works({ works }) {
               navigation={{
                 prevEl: navigationPrevRef.current,
                 nextEl: navigationNextRef.current,
-                disabledClass: styles.swiperNavigationDisabled,
+                disabledClass: styles.swiper_navigation_disabled,
               }}
               onInit={(swiper) => {
                 swiper.params.navigation.prevEl = navigationPrevRef.current;
