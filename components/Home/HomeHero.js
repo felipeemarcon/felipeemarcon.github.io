@@ -39,8 +39,12 @@ export default function HomeHero() {
                   <Text>{description}</Text>
                 </div>
                 <div className={heroStyles.contact}>
-                  <Text tag="span" customClass={heroStyles.contact_label}>
-                    How can I help you?
+                  <Text
+                    tag="span"
+                    weight={600}
+                    customClass={heroStyles.contact_label}
+                  >
+                    How can I help you?{" "}
                   </Text>
                   <LinkUnderscore
                     label={contact_email}
