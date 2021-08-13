@@ -43,39 +43,46 @@ export default function Works({ works }) {
               </div>
             </div>
           </div>
-          <Swiper
-            className={styles.swiper}
-            navigation={{
-              prevEl: navigationPrevRef.current,
-              nextEl: navigationNextRef.current,
-              disabledClass: styles.swiperNavigationDisabled,
-            }}
-            onInit={(swiper) => {
-              swiper.params.navigation.prevEl = navigationPrevRef.current;
-              swiper.params.navigation.nextEl = navigationNextRef.current;
-              swiper.navigation.update();
-            }}
-            breakpoints={{
-              320: {
-                slidesPerView: 1,
-                scrollbar: { draggable: true },
-              },
-              748: {
-                slidesPerView: 2,
-              },
-              1360: {
-                slidesPerView: 3,
-              },
-            }}
-          >
-            {works.map((work, index) => (
-              <SwiperSlide key={index} className={styles.swipperSlide}>
-                <WorkItem work={work} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </Grid>
       </Container>
+      <div style={{ position: "relative" }}>
+        <div className={styles.swiperMask}></div>
+        <Container>
+          <Grid>
+            <Swiper
+              className={styles.swiper}
+              navigation={{
+                prevEl: navigationPrevRef.current,
+                nextEl: navigationNextRef.current,
+                disabledClass: styles.swiperNavigationDisabled,
+              }}
+              onInit={(swiper) => {
+                swiper.params.navigation.prevEl = navigationPrevRef.current;
+                swiper.params.navigation.nextEl = navigationNextRef.current;
+                swiper.navigation.update();
+              }}
+              breakpoints={{
+                320: {
+                  slidesPerView: 1,
+                  scrollbar: { draggable: true },
+                },
+                748: {
+                  slidesPerView: 2,
+                },
+                1360: {
+                  slidesPerView: 3,
+                },
+              }}
+            >
+              {works.map((work, index) => (
+                <SwiperSlide key={index} className={styles.swipperSlide}>
+                  <WorkItem work={work} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </Grid>
+        </Container>
+      </div>
     </Section>
   );
 }
