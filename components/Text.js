@@ -9,10 +9,10 @@ const DEFAULT_PARAGRAPH_TEXT =
 
 export default function Text({
   children = DEFAULT_PARAGRAPH_TEXT,
-  tag = "p",
-  size = "md",
-  weight = "500",
-  theme = "onLight",
+  tag,
+  size,
+  weight,
+  theme,
   customClass,
 }) {
   const classes = classNames([styles.text], {
@@ -20,10 +20,11 @@ export default function Text({
     [`${styles.md}`]: size === "md",
     [`${styles.lg}`]: size === "lg",
     [`${styles.xl}`]: size === "xl",
-    [`${styles.regular}`]: weight === "500",
+    [`${styles.regular}`]: weight === 500,
+    [`${styles.medium}`]: weight === 600,
     [`${styles.onLight}`]: theme === "onLight",
     [`${styles.onDark}`]: theme === "onDark",
-    [`${styles.customClass}`]: customClass,
+    [customClass]: customClass,
   });
 
   const Tag = tag;
@@ -31,9 +32,18 @@ export default function Text({
   return <Tag className={classes}>{children}</Tag>;
 }
 
+Text.defaultProps = {
+  tag: "p",
+  size: "md",
+  weight: 500,
+  theme: "onLight",
+  customClass: "",
+};
+
 Text.propTypes = {
   theme: PropTypes.string,
   tag: PropTypes.string,
   size: PropTypes.string,
+  weight: PropTypes.number,
   customClass: PropTypes.string,
 };
