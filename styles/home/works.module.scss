@@ -8,30 +8,130 @@
   }
 }
 
-.heading, .items {
+.heading, .swiper {
   grid-column: 1 / span 8;
 }
 
 .heading {
-
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 
   .title_highlight {
     color: var(--color-brand-tertiary);
   }
 
+  @include for-tablet-up() {
+    grid-column: 1 / span 8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
 
   @include for-desktop-up() {
-    margin-bottom: 64px;
-    // grid-area: 1 / 1 / auto / span 3;
     grid-column: 1 / span 12;
   }
 }
 
 .items {
   @include for-desktop-up() {
-    // grid-area: 1 / 4 / auto / span 12;
     grid-column: 1 / span 12;
     display: flex;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  overflow: visible !important;
+
+  @include for-desktop-up() {
+    grid-column: 1 / span 12;
+    display: flex;
+  }
+}
+
+.swiperMask {
+  pointer-events: none;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100px;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  &::before {
+    left: 0;
+    background-image: linear-gradient(-270deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  &::after {
+    right: 0;
+    background-image: linear-gradient(270deg, #000000 0%, rgba(0, 0, 0, 0) 100%);
+  }
+
+  @include for-desktop-up() {
+    width: 200px;
+  }
+
+}
+
+.swipperSlide {
+  border: 1px solid rgba(#fff, 0.16);
+
+  @include for-tablet-up() {
+    &:not(:last-child) {
+      border-right: none;
+    }
+  }
+}
+
+.swiperNavigation {
+  display: flex;
+  gap: 0 8px;
+  margin-top: 56px;
+
+  @include for-tablet-up() {
+    margin-top: 0;
+  }
+}
+
+.swiperNavigationControl {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-brand-tertiary);
+  cursor: pointer;
+  transition: var(--transition-default);
+
+  svg path {
+    transition: var(--transition-default);
+  }
+
+  &:not(.swiperNavigationDisabled ):hover {
+    background-color: var(--color-brand-secondary);
+
+    svg path {
+      fill: var(--color-neutral-white)
+    }
+  }
+
+  @include for-desktop-up() {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.swiperNavigationDisabled {
+  cursor: not-allowed;
+  background-color: rgba(#fff, 0.08);
+
+  svg path {
+    fill: rgba(#fff, 0.24);
   }
 }
