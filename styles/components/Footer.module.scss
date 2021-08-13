@@ -12,11 +12,12 @@
   grid-template-rows: max-content 1fr;
 }
 
-.left, .right {
+.left, .right, .creditsLeft, .creditsRight {
   grid-column: 1 / span 4;
 
   @include for-tablet-up() {
     grid-column: 1 / span 8;
+    // grid-area: 1 / 1 / auto / span 8;
   }
 }
 
@@ -29,6 +30,10 @@
   }
 }
 
+.creditsLeft {
+  grid-column: 1 / span 4;
+}
+
 .right {
   grid-row: 1;
 
@@ -36,6 +41,11 @@
     grid-row: 2;
     grid-area: 1/ 9 / auto / span 11;
   }
+}
+
+
+.creditsRight {
+  grid-column: 5 / span 8;
 }
 
 .heading {

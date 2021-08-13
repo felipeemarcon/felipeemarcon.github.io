@@ -1,8 +1,10 @@
+const SITE_URL = "https://marcon-site-homolog.netlify.app/";
+
 const config = {
   cms_manual_init: true,
   local_backend: true,
-  site_url: "https://felipemarcon.com.br",
-  display_url: "https://felipemarcon.com.br",
+  site_url: SITE_URL,
+  display_url: SITE_URL,
   logo_url: "https://felipemarcon.com.br/src/images/brand.svg",
   backend: {
     name: "github",
@@ -147,6 +149,7 @@ const config = {
           date_format: "MMMM YYYY",
           time_format: "",
           format: "LLL",
+          required: false,
         },
       ],
     },

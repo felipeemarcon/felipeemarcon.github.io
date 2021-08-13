@@ -1,5 +1,21 @@
+@import "../mixins";
+
 .projectsSection {
  padding: 164px 0 110px;
+}
+
+.heading {
+  margin-bottom: 48px;
+  grid-column: 1 / span 4;
+
+  @include for-desktop-up() {
+    grid-column: 1 / span 12;
+    margin-bottom: 64px;
+  }
+}
+
+.title_highlight {
+  color: var(--color-brand-secondary);
 }
 
 .list, .moreProjects {

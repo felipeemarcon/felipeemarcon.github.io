@@ -96,8 +96,13 @@ export default function AboutMe() {
                 <p>
                   In my spare time I play guitar. I’m a member of a Hardcore
                   band as guitar player,{" "}
-                  <LinkUnderscore label="check it out" link="#" color="red" />.
-                  Music makes me a better person and is where I can make any
+                  <LinkUnderscore
+                    label="check it out"
+                    link="https://open.spotify.com/artist/47x8Hj9iDylNShwbrRhJmh?si=O5fIW9E-Qru8kWclO_G_GQ&dl_branch=1"
+                    color="red"
+                    newTab={true}
+                  />
+                  . Music makes me a better person and is where I can make any
                   crazy idea just because I love it.
                 </p>
               </div>

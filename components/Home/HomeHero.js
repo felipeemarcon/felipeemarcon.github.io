@@ -27,7 +27,7 @@ export default function HomeHero() {
               <div className={heroStyles.heading}>
                 <div className={heroStyles.greeting}>Hello, there 👋</div>
                 <Heading type="h1" customClass={heroStyles.title}>
-                  I’m{" "}
+                  I&apos;m{" "}
                   <span className={heroStyles.title_highlight}>
                     Felipe Marcon
                   </span>{" "}
@@ -39,8 +39,12 @@ export default function HomeHero() {
                   <Text>{description}</Text>
                 </div>
                 <div className={heroStyles.contact}>
-                  <Text tag="span" customClass={heroStyles.contact_label}>
-                    How can I help you?
+                  <Text
+                    tag="span"
+                    weight={600}
+                    customClass={heroStyles.contact_label}
+                  >
+                    How can I help you?{" "}
                   </Text>
                   <LinkUnderscore
                     label={contact_email}

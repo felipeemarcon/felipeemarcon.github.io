@@ -7,12 +7,19 @@ import LinkUnderscore from "@components/LinkUnderscore";
 
 // Styles
 import styles from "@styles/home/projects.module.scss";
+import Heading from "@components/Heading";
 
 const HomeProjects = ({ data }) => {
   return (
     <Section customClass={styles.projectsSection}>
       <Container>
         <Grid>
+          <div className={styles.heading}>
+            <Heading type="h2">
+              Things I&apos;ve{" "}
+              <span className={styles.title_highlight}>done</span>
+            </Heading>
+          </div>
           <div className={styles.list}>
             {data.map((frontmatter, index) => (
               <ProjectItem data={frontmatter} key={index} />

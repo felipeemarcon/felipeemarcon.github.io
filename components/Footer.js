@@ -12,9 +12,6 @@ import styles from "@styles/components/Footer.module.scss";
 
 // Images
 import BadgeImage from "@images/badge_projects.svg";
-import IconBehance from "@images/icons/Behance.svg";
-import IconDribbble from "@images/icons/Dribbble.svg";
-import IconLinkedin from "@images/icons/Linkedin.svg";
 import BrandSymbol from "@images/brand_symbol.svg";
 
 // Content
@@ -22,24 +19,6 @@ import { attributes as globalAttributes } from "@content/contact/configs.md";
 
 export default function Footer({ socialLinks }) {
   const { contact_email } = globalAttributes;
-
-  // const socialLinks = [
-  //   {
-  //     link: "https://www.behance.net/felipeemarcon",
-  //     label: "Behance",
-  //     icon: <IconBehance />,
-  //   },
-  //   {
-  //     link: "https://dribbble.com/felipee_marcon",
-  //     label: "Dribbble",
-  //     icon: <IconDribbble />,
-  //   },
-  //   {
-  //     link: "https://www.linkedin.com/in/felipeemarcon/",
-  //     label: "Linkedin",
-  //     icon: <IconLinkedin />,
-  //   },
-  // ];
 
   return (
     <footer>
@@ -87,12 +66,12 @@ export default function Footer({ socialLinks }) {
         <Container>
           <div className={styles.credits}>
             <Grid customClass={styles.grid}>
-              <div className={styles.left}>
+              <div className={styles.creditsLeft}>
                 <div className={styles.brand}>
                   <BrandSymbol />
                 </div>
               </div>
-              <div className={styles.right}>
+              <div className={styles.creditsRight}>
                 <div className={styles.madeWith}>
                   <Text tag="span" theme="onDark" size="sm">
                     Made with 💛️ in Brazil
