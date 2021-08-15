@@ -2,25 +2,11 @@ import React, { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 // Styles
 import styles from "@styles/Home.module.css";
 
 export default function Home() {
-  const RedirectPage = () => {
-    console.log("root");
-    const router = useRouter();
-    // Make sure we're in the browser
-    if (typeof window !== "undefined") {
-      router.push("/about");
-    }
-  };
-
-  useEffect(() => {
-    <RedirectPage />;
-  });
-
   return (
     <div className={styles.container}>
       <Head>

@@ -1,3 +1,7 @@
+import i18n from "i18next";
+import { initReactI18next, useTranslation } from "react-i18next";
+import resourcesToBackend from "i18next-resources-to-backend";
+
 // Next Components
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -18,23 +22,13 @@ import NavMenuLinesIcon from "@images/navmenu_lines.svg";
 // Translate
 // import { ptBR, enUS } from "@locale/locale";
 
-export default function Header() {
+function Header() {
   const router = useRouter();
-  const { locale } = router;
 
-  // const translate = locale == "pt-BR" ? ptBR : enUS;
+  const { t, i18n } = useTranslation("general", { useSuspense: false });
+  const { language: locale } = i18n;
 
-  const handleToggleLanguage = () => {
-    switch (locale) {
-      case "pt-BR":
-        router.push("/", "/", { locale: "en-US" });
-        break;
-      case "en-US":
-        router.push("/", "/", { locale: "pt-BR" });
-        break;
-    }
-  };
-
+  console.log(locale);
   const renderCurrentLocale = (locale) => {
     switch (locale) {
       case "pt-BR":
@@ -62,7 +56,12 @@ export default function Header() {
           <div className={styles.navTrigger}>
             <NavMenuLinesIcon />
           </div>
-          <div className={styles.navLanguage} onClick={handleToggleLanguage}>
+          <div
+            className={styles.navLanguage}
+            title={t("change_language", {
+              locale: renderCurrentLocale(locale),
+            })}
+          >
             <Icon icon="language" size={32} />
             <span className={styles.navLanguageLabel}>
               {renderCurrentLocale(locale)}
@@ -73,3 +72,9 @@ export default function Header() {
     </header>
   );
 }
+
+Header.getInitialProps = async () => {
+  return { namespacesRequired: ["general"] };
+};
+
+export default Header;
