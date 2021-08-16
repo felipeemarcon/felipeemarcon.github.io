@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import fs from "fs";
 import matter from "gray-matter";
 import Head from "next/head";
-import NextI18n from "../i18n";
+import "@src/i18n";
 
 // Sites Components
 import Header from "@components/Header";
@@ -18,10 +17,6 @@ import Footer from "@components/Footer";
 import styles from "@styles/home/general.module.scss";
 
 export default function Home({ projects, socialLinks, works, ...props }) {
-  useEffect(() => {
-    NextI18n();
-  });
-
   return (
     <>
       <Head>

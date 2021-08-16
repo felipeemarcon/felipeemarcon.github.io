@@ -12,6 +12,7 @@
       "@styles/*": ["./styles/*"],
       "@utils/*": ["./utils/*"],
       "@locales/*": ["./locales/*"],
+      "@src/*": ["./src/*"],
     }
   }
 }

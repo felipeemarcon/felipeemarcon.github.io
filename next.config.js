@@ -1,10 +1,6 @@
 const path = require("path");
 
 module.exports = {
-  // i18n: {
-  //   locales: ["pt-BR", "en-US"],
-  //   defaultLocale: "en-US",
-  // },
   target: "serverless",
   reactStrictMode: true,
   sassOptions: {

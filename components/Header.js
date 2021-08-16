@@ -1,10 +1,7 @@
-import i18n from "i18next";
-import { initReactI18next, useTranslation } from "react-i18next";
-import resourcesToBackend from "i18next-resources-to-backend";
+import { useTranslation } from "react-i18next";
 
 // Next Components
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 // Site Components
 import Container from "@components/Container";
@@ -19,25 +16,31 @@ import styles from "@styles/components/Header.module.scss";
 import BrandSymbol from "@images/brand_symbol.svg";
 import NavMenuLinesIcon from "@images/navmenu_lines.svg";
 
-// Translate
-// import { ptBR, enUS } from "@locale/locale";
-
 function Header() {
-  const router = useRouter();
-
-  const { t, i18n } = useTranslation("general", { useSuspense: false });
+  const { t, i18n } = useTranslation("translation", { useSuspense: false });
   const { language: locale } = i18n;
 
-  console.log(locale);
+  const changeLanguageHandler = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+
   const renderCurrentLocale = (locale) => {
     switch (locale) {
-      case "pt-BR":
-        return "PT";
-      case "en-US":
-        return "EN";
+      case "en":
+        return {
+          alias: "PT",
+          name: "Português Brasil",
+        };
+      case "pt":
+        return {
+          alias: "EN",
+          name: "English",
+        };
       default:
-        return "PT";
-        break;
+        return {
+          alias: "PT",
+          name: "Português Brasil",
+        };
     }
   };
 
@@ -58,13 +61,14 @@ function Header() {
           </div>
           <div
             className={styles.navLanguage}
+            onClick={() => changeLanguageHandler(locale === "en" ? "pt" : "en")}
             title={t("change_language", {
-              locale: renderCurrentLocale(locale),
+              locale: renderCurrentLocale(locale).name,
             })}
           >
             <Icon icon="language" size={32} />
             <span className={styles.navLanguageLabel}>
-              {renderCurrentLocale(locale)}
+              {renderCurrentLocale(locale).alias}
             </span>
           </div>
         </Grid>
@@ -72,9 +76,5 @@ function Header() {
     </header>
   );
 }
-
-Header.getInitialProps = async () => {
-  return { namespacesRequired: ["general"] };
-};
 
 export default Header;
