@@ -22,7 +22,6 @@ Section.defaultProps = {
 };
 
 Section.propTypes = {
-  children: PropTypes.elementType.isRequired,
   id: PropTypes.string,
   customClass: PropTypes.string,
 };

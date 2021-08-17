@@ -59,7 +59,7 @@ export default function HomeHero() {
                   />
                 </div>
                 <div className={heroStyles.action}>
-                  <Button label={t("Check my work")} />
+                  <Button label={t("Check my work")} link="#myProjects" />
                 </div>
               </div>
             </div>
