@@ -14,7 +14,7 @@ import Heading from "@components/Heading";
 
 const HomeProjects = ({ data }) => {
   return (
-    <Section customClass={styles.projectsSection}>
+    <Section id="myProjects" customClass={styles.projectsSection}>
       <Container>
         <Grid>
           <div className={styles.heading}>

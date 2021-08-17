@@ -24,7 +24,7 @@ export default function Works({ works }) {
   const navigationNextRef = useRef(null);
 
   return (
-    <Section customClass={styles.worksSection}>
+    <Section id="myWorks" customClass={styles.worksSection}>
       <Container>
         <Grid>
           <div className={styles.heading}>
@@ -84,7 +84,6 @@ export default function Works({ works }) {
                 },
                 1600: {
                   slidesPerView: "auto",
-                  // centeredSlides: true,
                 },
               }}
             >
