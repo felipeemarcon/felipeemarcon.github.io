@@ -8,7 +8,6 @@ import Section from "@components/Section";
 import Container from "@components/Container";
 import Grid from "@components/Grid";
 import Heading from "@components/Heading";
-import GridColumn from "@components/GridColumn";
 import LinkUnderscore from "@components/LinkUnderscore";
 
 // i18n
@@ -27,21 +26,17 @@ export default function AboutMe() {
     <Section customClass={styles.aboutMeSection}>
       <Container>
         <Grid>
-          <GridColumn columns={12}>
-            <div className={styles.wrapper}>
-              <div className={styles.heading}>
-                <Heading type="h2">
-                  <Trans
-                    i18nKey="A little more about me"
-                    defaults="A little more <highlight>about me</highlight>"
-                    components={{
-                      highlight: <span className={styles.title_highlight} />,
-                    }}
-                  />
-                </Heading>
-              </div>
-            </div>
-          </GridColumn>
+          <div className={styles.heading}>
+            <Heading type="h2">
+              <Trans
+                i18nKey="A little more about me"
+                defaults="A little more <highlight>about me</highlight>"
+                components={{
+                  highlight: <span className={styles.title_highlight} />,
+                }}
+              />
+            </Heading>
+          </div>
         </Grid>
 
         <div className={styles.main}>
