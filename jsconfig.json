@@ -2,16 +2,16 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@cms/*": ["./cms/*"],
-      "@content/*": ["./content/*"],
-      "@components/*": ["./components/*"],
-      "@pages/*": ["./pages/*"],
+      "@cms/*": ["./src/cms/*"],
+      "@content/*": ["./src/content/*"],
+      "@components/*": ["./src/components/*"],
+      "@pages/*": ["./src/pages/*"],
       "@public/*": ["./public/*"],
       "@images/*": ["./public/images/*"],
       "@icons/*": ["./public/images/icons/*"],
-      "@styles/*": ["./styles/*"],
-      "@utils/*": ["./utils/*"],
-      "@locales/*": ["./locales/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@locales/*": ["./src/locales/*"],
       "@src/*": ["./src/*"],
       "@static/*": ["./static/*"],
     }
