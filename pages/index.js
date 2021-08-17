@@ -4,6 +4,7 @@ import Head from "next/head";
 import "@src/i18n";
 
 // Sites Components
+import SEO from "@components/Seo";
 import Header from "@components/Header";
 
 // Sections
@@ -19,13 +20,10 @@ import styles from "@styles/home/general.module.scss";
 export default function Home({ projects, socialLinks, works, ...props }) {
   return (
     <>
-      <Head>
-        <title>About - Felipe Marcon</title>
-        <meta
-          name="description"
-          content="I am a Product Designer with front-end skills based in Brazil"
-        />
-      </Head>
+      <SEO
+        title="Home"
+        description="I am a Product Designer with front-end skills based in Brazil"
+      />
 
       <Header />
 
