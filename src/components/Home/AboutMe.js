@@ -23,7 +23,7 @@ export default function AboutMe() {
   const { t } = useTranslation("translation", { useSuspense: false });
 
   return (
-    <Section customClass={styles.aboutMeSection}>
+    <Section id="aboutMe" customClass={styles.aboutMeSection}>
       <Container>
         <Grid>
           <div className={styles.heading}>

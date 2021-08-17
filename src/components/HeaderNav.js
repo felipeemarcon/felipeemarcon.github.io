@@ -18,16 +18,19 @@ export default function HeaderNav() {
 
   const navMenuItems = [
     {
-      link: "/#work",
+      link: "/#myProjects",
       label: t("nav_menu.work"),
+      newTab: false,
     },
     {
-      link: "/#about",
+      link: "/#aboutMe",
       label: t("nav_menu.about"),
+      newTab: false,
     },
     {
-      link: "/blog",
+      link: "https://medium.com/@felipemarcon",
       label: t("nav_menu.articles"),
+      newTab: true,
     },
   ];
 
@@ -37,7 +40,7 @@ export default function HeaderNav() {
         {items.map((item, index) => (
           <li key={index}>
             <Link href={item.link}>
-              <a>{item.label}</a>
+              <a target={`${item.newTab && "target='_blank'"}`}>{item.label}</a>
             </Link>
           </li>
         ))}
