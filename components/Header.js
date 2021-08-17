@@ -1,10 +1,13 @@
+import { useTranslation } from "react-i18next";
+
 // Next Components
 import Link from "next/link";
 
-// Components
+// Site Components
 import Container from "@components/Container";
 import Grid from "@components/Grid";
 import HeaderNav from "@components/HeaderNav";
+import ToggleLanguage from "@components/ToggleLanguage";
 
 // Styles
 import styles from "@styles/components/Header.module.scss";
@@ -13,14 +16,16 @@ import styles from "@styles/components/Header.module.scss";
 import BrandSymbol from "@images/brand_symbol.svg";
 import NavMenuLinesIcon from "@images/navmenu_lines.svg";
 
-export default function Header() {
+function Header() {
+  const { t } = useTranslation("translation", { useSuspense: false });
+
   return (
     <header className={styles.header}>
       <Container>
         <Grid alignHorizontal={true}>
           <div className={styles.brand}>
             <Link href="/">
-              <a>
+              <a title={t("Go to home")}>
                 <BrandSymbol />
               </a>
             </Link>
@@ -29,8 +34,11 @@ export default function Header() {
           <div className={styles.navTrigger}>
             <NavMenuLinesIcon />
           </div>
+          <ToggleLanguage />
         </Grid>
       </Container>
     </header>
   );
 }
+
+export default Header;

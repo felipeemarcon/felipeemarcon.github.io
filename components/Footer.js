@@ -7,6 +7,9 @@ import LinkUnderscore from "@components/LinkUnderscore";
 import Text from "@components/Text";
 import SocialLinks from "@components/SocialLinks";
 
+// i18n
+import { Trans, useTranslation } from "react-i18next";
+
 // Styles
 import styles from "@styles/components/Footer.module.scss";
 
@@ -18,6 +21,7 @@ import BrandSymbol from "@images/brand_symbol.svg";
 import { attributes as globalAttributes } from "@content/contact/configs.md";
 
 export default function Footer({ socialLinks }) {
+  const { t } = useTranslation("translation", { useSuspense: false });
   const { contact_email } = globalAttributes;
 
   return (
@@ -29,22 +33,27 @@ export default function Footer({ socialLinks }) {
               <div className={styles.heading}>
                 <div className={styles.title}>
                   <Heading>
-                    Let’s work{" "}
-                    <span className={styles.title_highlight}>together?</span>
+                    <Trans
+                      i18nKey="Lets work together"
+                      defaults="Let's work <highlight>together</highlight>"
+                      components={{
+                        highlight: <span className={styles.title_highlight} />,
+                      }}
+                    />
                   </Heading>
                 </div>
                 <div className={styles.subtitle}>
                   <Text theme="onDark" tag="span">
-                    I’m free to do some freelance projects.
+                    {t("Im free to do projects")}
                   </Text>
                   <Text theme="onDark" tag="span">
-                    We can talk about your ideas.
+                    {t("We can talk")}
                   </Text>
                 </div>
               </div>
               <div className={styles.contact}>
                 <Text theme="onDark" tag="span">
-                  Get in touch:{" "}
+                  {t("Get in touch")}:{" "}
                   <LinkUnderscore
                     label={contact_email}
                     link={`mailto:${contact_email}`}
@@ -74,7 +83,7 @@ export default function Footer({ socialLinks }) {
               <div className={styles.creditsRight}>
                 <div className={styles.madeWith}>
                   <Text tag="span" theme="onDark" size="sm">
-                    Made with 💛️ in Brazil
+                    {t("Made with love")}
                   </Text>
                 </div>
               </div>

@@ -10,6 +10,9 @@ import Heading from "@components/Heading";
 import WorkItem from "@components/Home/WorkItem";
 import Icon from "@components/Icon";
 
+// i18n
+import { Trans, useTranslation } from "react-i18next";
+
 // Styles
 import styles from "@styles/home/works.module.scss";
 import "swiper/swiper-bundle.css";
@@ -21,12 +24,18 @@ export default function Works({ works }) {
   const navigationNextRef = useRef(null);
 
   return (
-    <Section customClass={styles.worksSection}>
+    <Section id="myWorks" customClass={styles.worksSection}>
       <Container>
         <Grid>
           <div className={styles.heading}>
             <Heading type="h3">
-              Places I <span className={styles.title_highlight}>worked</span>
+              <Trans
+                i18nKey="Places I Worked"
+                defaults="Places I <highlight>worked</highlight>"
+                components={{
+                  highlight: <span className={styles.title_highlight} />,
+                }}
+              />
             </Heading>
             <div className={styles.swiper_navigation}>
               <div
@@ -72,6 +81,9 @@ export default function Works({ works }) {
                 },
                 1360: {
                   slidesPerView: 3,
+                },
+                1600: {
+                  slidesPerView: "auto",
                 },
               }}
             >

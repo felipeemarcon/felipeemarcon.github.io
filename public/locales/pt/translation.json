@@ -1,0 +1,26 @@
+{
+  "nav_menu": {
+    "work": "Projetos",
+    "about": "Sobre",
+    "articles": "Artigos"
+  },
+  "Go to home": "Go to home page",
+  "Change language": "Change site language to {{locale}}",
+  "Hello there": "Olá, visitante 👋",
+  "Im Felipe": "Me chamo <highlight>Felipe Marcon</highlight> e eu projeto experiências incríveis.",
+  "Hero Description": "Sou Designer Produto e eu gosto de desenvolver experiências digitais e ajudar as pessoas e empresas através de um bom design. Em meu tempo livre eu faço música com meus amigos.",
+  "How can I help you?": "Como posso te ajudar?",
+  "Check my work": "Veja meus trabalhos",
+  "Things I've done": "Coisas que <highlight>já fiz</highlight>",
+  "More projects": "Você pode ver mais trabalhos meus no <link_1/> ou <link_2/>.",
+  "A little more about me": "Um pouco mais <highlight>sobre mim</highlight>",
+  "This is me": "Sou eu nessa foto ;)",
+  "Designer and Musician": "Designer, Músico e amante de pizza",
+  "Fun fact": "Fato engraçado: na minha camiseta está escrito “Pizza ou morra“ em inglês. Eu estava na pizzaria Domino's quando esta foto foi tirada.  🍕",
+  "Places I Worked": "Lugares que <highlight>trabalhei</highlight>",
+  "Lets work": "Vamos trabalhar <highlight>juntos?</highlight>",
+  "Im free to do projects": "Estou disponível para trabalhar em alguns projetos como freelancer",
+  "We can talk": "Podemos conversar sobre suas ideias.",
+  "Get in touch": "Entre em contato",
+  "Made with love": "Feito com 💛️ no Brasil"
+}

@@ -11,6 +11,8 @@
       "@icons/*": ["./public/images/icons/*"],
       "@styles/*": ["./styles/*"],
       "@utils/*": ["./utils/*"],
+      "@locales/*": ["./locales/*"],
+      "@src/*": ["./src/*"],
     }
   }
 }

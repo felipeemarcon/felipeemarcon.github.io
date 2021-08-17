@@ -14,9 +14,14 @@
 
 .heading {
   margin-bottom: 32px;
+  grid-column: 1 / span 8;
 
   .title_highlight {
     color: var(--color-support-primary);
+  }
+
+  @include for-tablet-up() {
+    grid-column: 1 / span 8;
   }
 }
 
