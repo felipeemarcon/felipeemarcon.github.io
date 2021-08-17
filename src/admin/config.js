@@ -11,7 +11,7 @@ const config = {
     repo: "felipeemarcon/felipeemarcon.github.io",
     branch: "homolog",
   },
-  media_folder: "public/img",
+  media_folder: "public/admin/img",
   public_folder: "img",
   collections: [
     {

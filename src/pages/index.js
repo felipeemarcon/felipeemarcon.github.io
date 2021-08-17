@@ -39,15 +39,15 @@ export default function Home({ projects, socialLinks, works, ...props }) {
 }
 
 export async function getStaticProps() {
-  const projectFiles = fs.readdirSync(`${process.cwd()}/content/projects`);
+  const projectFiles = fs.readdirSync(`${process.cwd()}/src/content/projects`);
   const socialLinksFiles = fs.readdirSync(
-    `${process.cwd()}/content/global/socialLinks`
+    `${process.cwd()}/src/content/global/socialLinks`
   );
-  const workFiles = fs.readdirSync(`${process.cwd()}/content/works/`);
+  const workFiles = fs.readdirSync(`${process.cwd()}/src/content/works/`);
 
   const projects = projectFiles.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/content/projects/${filename}`)
+      .readFileSync(`${process.cwd()}/src/content/projects/${filename}`)
       .toString();
 
     const { data } = matter(markdownWithMetadata);
@@ -64,7 +64,9 @@ export async function getStaticProps() {
 
   const socialLinks = socialLinksFiles.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/content/global/socialLinks/${filename}`)
+      .readFileSync(
+        `${process.cwd()}/src/content/global/socialLinks/${filename}`
+      )
       .toString();
 
     const { data } = matter(markdownWithMetadata);
@@ -81,7 +83,7 @@ export async function getStaticProps() {
 
   const works = workFiles.map((filename) => {
     const markdownWithMetadata = fs
-      .readFileSync(`${process.cwd()}/content/works/${filename}`)
+      .readFileSync(`${process.cwd()}/src/content/works/${filename}`)
       .toString();
 
     const { data } = matter(markdownWithMetadata);

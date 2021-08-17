@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import config from "@cms/config";
+import config from "@admin/config";
 
 const CMS = dynamic(
   () =>
