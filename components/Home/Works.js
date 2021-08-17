@@ -82,6 +82,10 @@ export default function Works({ works }) {
                 1360: {
                   slidesPerView: 3,
                 },
+                1600: {
+                  slidesPerView: "auto",
+                  // centeredSlides: true,
+                },
               }}
             >
               {works.map((work, index) => (
