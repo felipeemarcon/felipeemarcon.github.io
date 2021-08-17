@@ -1,3 +1,26 @@
 {
-  "change_language": "Mudar idioma do site para {{locale}}"
+  "nav_menu": {
+    "work": "Work",
+    "about": "About",
+    "articles": "Articles"
+  },
+  "Go to home": "Go to home page",
+  "Change Language": "Mudar idioma do site para {{locale}}",
+  "Hello there": "Hello, there 👋",
+  "Im Felipe": "I'm <highlight>Felipe Marcon</highlight> and I design delightful experiences.",
+  "Hero Description": "I am a Product Designer and I love to develop experiences and help people and companies through good design. In my spare time I play music with some friends.",
+  "How can I help you?": "How can I help you?",
+  "Check my work": "Check my work",
+  "Things I've done": "Things I've <highlight>done</highlight>",
+  "More projects": "You can see more projects in my <link_1/> or <link_2/>.",
+  "A little more about me": "A little more <highlight>about me</highlight>",
+  "This is me": "This is me on the picture",
+  "Designer and Musician": "Designer, Musician and pizza lover",
+  "Fun fact": "Fun fact: it’s says “Pizza or die” on my shirt in this photo and I was at Dominos when this photo was taken. I really like pizza. 🍕",
+  "Places I Worked": "Places I Worked",
+  "Let's work": "<highlight>together</highlight>",
+  "Im free to do projects": "I’m free to do some freelance projects.",
+  "We can talk": "We can talk about your ideas.",
+  "Get in touch": "Get in touch",
+  "Made with love": "Made with 💛️ in Brazil"
 }

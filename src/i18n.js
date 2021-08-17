@@ -6,7 +6,6 @@ i18n
   .use(Backend)
   .use(initReactI18next)
   .init({
-    debug: true,
     fallbackLng: "en",
     supportedLngs: ["en", "pt"],
     interpolation: {

@@ -2,27 +2,32 @@
 import Link from "next/link";
 import LinkUnderscore from "@components/LinkUnderscore";
 
-// Styles
-import styles from "@styles/components/HeaderNav.module.scss";
-
 // Content
 import { attributes as globalAttributes } from "@content/contact/configs.md";
 
+// i18n
+import { Trans, useTranslation } from "react-i18next";
+
+// Styles
+import styles from "@styles/components/HeaderNav.module.scss";
+
 export default function HeaderNav() {
+  const { t } = useTranslation("translation", { useSuspense: false });
+
   const { contact_email } = globalAttributes;
 
   const navMenuItems = [
     {
       link: "/#work",
-      label: "Work",
+      label: t("nav_menu.work"),
     },
     {
       link: "/#about",
-      label: "About",
+      label: t("nav_menu.about"),
     },
     {
       link: "/blog",
-      label: "Blog",
+      label: t("nav_menu.articles"),
     },
   ];
 

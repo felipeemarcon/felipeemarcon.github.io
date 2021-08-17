@@ -1,3 +1,5 @@
+import { toBase64, shimmer } from "@utils/index";
+
 // Next Components
 import Image from "next/image";
 
@@ -9,6 +11,9 @@ import Heading from "@components/Heading";
 import GridColumn from "@components/GridColumn";
 import LinkUnderscore from "@components/LinkUnderscore";
 
+// i18n
+import { Trans, useTranslation } from "react-i18next";
+
 // Styles
 import styles from "@styles/home/aboutMe.module.scss";
 
@@ -16,24 +21,7 @@ import styles from "@styles/home/aboutMe.module.scss";
 import AboutMeImage from "@images/profile_image_about_me.jpg";
 
 export default function AboutMe() {
-  const shimmer = (w, h) => `
-    <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-      <defs>
-        <linearGradient id="g">
-          <stop stop-color="#333" offset="20%" />
-          <stop stop-color="#222" offset="50%" />
-          <stop stop-color="#333" offset="70%" />
-        </linearGradient>
-      </defs>
-      <rect width="${w}" height="${h}" fill="#333" />
-      <rect id="r" width="${w}" height="${h}" fill="url(#g)" />
-      <animate xlink:href="#r" attributeName="x" from="-${w}" to="${w}" dur="1s" repeatCount="indefinite"  />
-    </svg>`;
-
-  const toBase64 = (str) =>
-    typeof window === "undefined"
-      ? Buffer.from(str).toString("base64")
-      : window.btoa(str);
+  const { t } = useTranslation("translation", { useSuspense: false });
 
   return (
     <Section customClass={styles.aboutMeSection}>
@@ -43,8 +31,13 @@ export default function AboutMe() {
             <div className={styles.wrapper}>
               <div className={styles.heading}>
                 <Heading type="h2">
-                  A little more{" "}
-                  <span className={styles.title_highlight}>about me</span>
+                  <Trans
+                    i18nKey="A little more about me"
+                    defaults="A little more <highlight>about me</highlight>"
+                    components={{
+                      highlight: <span className={styles.title_highlight} />,
+                    }}
+                  />
                 </Heading>
               </div>
             </div>
@@ -58,7 +51,7 @@ export default function AboutMe() {
                 <div className={styles.image}>
                   <Image
                     src={AboutMeImage}
-                    alt="This is me in the image"
+                    alt={t("This is me")}
                     quality={100}
                     layout="fill"
                     placeholder="blur"
@@ -68,14 +61,8 @@ export default function AboutMe() {
                   />
                 </div>
                 <div className={styles.photoLabel}>
-                  <Heading type="h6">
-                    Designer, Musician and pizza lover
-                  </Heading>
-                  <span className={styles.photoText}>
-                    Fun fact: it’s says “Pizza or die” on my shirt in this photo
-                    and I was at Dominos when this photo was taken. I really
-                    like pizza. 🍕
-                  </span>
+                  <Heading type="h6">{t("Designer and Musician")}</Heading>
+                  <span className={styles.photoText}>{t("Fun fact")}</span>
                 </div>
               </div>
             </div>

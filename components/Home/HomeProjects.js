@@ -5,6 +5,9 @@ import Grid from "@components/Grid";
 import ProjectItem from "@components/Home/ProjectItem";
 import LinkUnderscore from "@components/LinkUnderscore";
 
+// i18n
+import { Trans } from "react-i18next";
+
 // Styles
 import styles from "@styles/home/projects.module.scss";
 import Heading from "@components/Heading";
@@ -16,8 +19,13 @@ const HomeProjects = ({ data }) => {
         <Grid>
           <div className={styles.heading}>
             <Heading type="h2">
-              Things I&apos;ve{" "}
-              <span className={styles.title_highlight}>done</span>
+              <Trans
+                i18nKey="Things I've done"
+                defaults="Things I've <highlight>done</highlight>"
+                components={{
+                  highlight: <span className={styles.title_highlight} />,
+                }}
+              />
             </Heading>
           </div>
           <div className={styles.list}>
@@ -27,17 +35,25 @@ const HomeProjects = ({ data }) => {
           </div>
           <div className={styles.moreProjects}>
             <span>
-              You can see more projects in my{" "}
-              <LinkUnderscore
-                label="Behance"
-                link="https://www.behance.net/felipeemarcon"
-              />{" "}
-              or{" "}
-              <LinkUnderscore
-                label="Dribbble"
-                link="https://dribbble.com/felipee_marcon"
+              <Trans
+                i18nKey="More projects"
+                defaults="You can see more projects in my <link_1/> or <link_2/>."
+                values={{ link_1: "Behance", link_2: "Dribbble" }}
+                components={{
+                  link_1: (
+                    <LinkUnderscore
+                      label="Behance"
+                      link="https://www.behance.net/felipeemarcon"
+                    />
+                  ),
+                  link_2: (
+                    <LinkUnderscore
+                      label="Dribbble"
+                      link="https://dribbble.com/felipee_marcon"
+                    />
+                  ),
+                }}
               />
-              .
             </span>
           </div>
         </Grid>

@@ -7,15 +7,17 @@ import Button from "@components/Button";
 import Text from "@components/Text";
 import Heading from "@components/Heading";
 
-import { attributes as heroAttributes } from "@content/home/sections/hero.md";
-
+// Content
 import { attributes as globalAttributes } from "@content/contact/configs.md";
+
+// i18n
+import { Trans, useTranslation } from "react-i18next";
 
 // Styles
 import heroStyles from "@styles/home/hero.module.scss";
 
 export default function HomeHero() {
-  const { description } = heroAttributes;
+  const { t } = useTranslation("translation", { useSuspense: false });
   const { contact_email } = globalAttributes;
 
   return (
@@ -25,18 +27,22 @@ export default function HomeHero() {
           <Grid>
             <div className={heroStyles.left}>
               <div className={heroStyles.heading}>
-                <div className={heroStyles.greeting}>Hello, there 👋</div>
+                <div className={heroStyles.greeting}>{t("Hello there")}</div>
                 <Heading type="h1" customClass={heroStyles.title}>
-                  I&apos;m{" "}
-                  <span className={heroStyles.title_highlight}>
-                    Felipe Marcon
-                  </span>{" "}
-                  and I design delightful experiences.
+                  <Trans
+                    i18nKey="Im Felipe"
+                    defaults="I'm <highlight>Felipe Marcon</highlight> and I design delightful experiences."
+                    components={{
+                      highlight: (
+                        <span className={heroStyles.title_highlight} />
+                      ),
+                    }}
+                  />
                 </Heading>
               </div>
               <div className={heroStyles.content}>
                 <div className={heroStyles.description}>
-                  <Text>{description}</Text>
+                  <Text>{t("Hero Description")}</Text>
                 </div>
                 <div className={heroStyles.contact}>
                   <Text
@@ -44,7 +50,7 @@ export default function HomeHero() {
                     weight={600}
                     customClass={heroStyles.contact_label}
                   >
-                    How can I help you?{" "}
+                    {t("How can I help you?")}
                   </Text>
                   <LinkUnderscore
                     label={contact_email}
@@ -53,7 +59,7 @@ export default function HomeHero() {
                   />
                 </div>
                 <div className={heroStyles.action}>
-                  <Button label="Check my work" />
+                  <Button label={t("Check my work")} />
                 </div>
               </div>
             </div>
