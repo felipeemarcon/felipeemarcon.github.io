@@ -17,6 +17,7 @@ import styles from "@styles/components/Header.module.scss";
 // Images
 import BrandSymbol from "@images/brand_symbol.svg";
 import NavMenuLinesIcon from "@images/navmenu_lines.svg";
+import { Fragment } from "react";
 
 function Header({ socialLinks }) {
   const { t } = useTranslation("translation", { useSuspense: false });
@@ -28,7 +29,13 @@ function Header({ socialLinks }) {
           <div className={styles.brand}>
             <Link href="/">
               <a title={t("Go to home")}>
-                <BrandSymbol />
+                <div className={styles.brandSymbol}>
+                  <BrandSymbol />
+                </div>
+                <div className={styles.brandLabel}>
+                  Felipe{" "}
+                  <span className={styles.brandLabelHighlight}>Marcon</span>
+                </div>
               </a>
             </Link>
           </div>
