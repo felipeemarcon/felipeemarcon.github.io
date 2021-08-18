@@ -25,7 +25,7 @@ export default function Home({ projects, socialLinks, works, ...props }) {
         description="I am a Product Designer with front-end skills based in Brazil"
       />
 
-      <Header />
+      <Header socialLinks={socialLinks} />
 
       <HomeHero />
       <div className={styles.darkArea}>

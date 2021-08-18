@@ -2,6 +2,9 @@
 import Link from "next/link";
 import LinkUnderscore from "@components/LinkUnderscore";
 
+// Site components
+import DividerLine from "@components/DividerLine";
+
 // Content
 import { attributes as globalAttributes } from "@content/contact/configs.md";
 
@@ -32,6 +35,11 @@ export default function HeaderNav() {
       label: t("nav_menu.articles"),
       newTab: true,
     },
+    {
+      link: "mailto:oi@felipemarcon.com.br",
+      label: t("nav_menu.contact"),
+      newTab: false,
+    },
   ];
 
   const renderNavMenu = (items) => {
@@ -49,16 +57,8 @@ export default function HeaderNav() {
   };
 
   return (
-    <nav className={styles.navMenu}>
+    <nav className={styles.navMenu} role="nav">
       {renderNavMenu(navMenuItems)}
-
-      <div className={styles.email}>
-        <LinkUnderscore
-          label={contact_email}
-          link={`mailto:${contact_email}`}
-          size="md"
-        />
-      </div>
     </nav>
   );
 }

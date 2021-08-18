@@ -33,6 +33,15 @@
   }
 }
 
+.right {
+  @include for-desktop-up() {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-column: 2 / span 12;
+  }
+}
+
 .navTrigger {
   width: 40px;
   height: 40px;

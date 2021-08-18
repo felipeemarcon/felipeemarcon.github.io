@@ -33,14 +33,6 @@
           color: var(--color-brand-tertiary);
         }
       }
-
-      // &:first-child a {
-      //   padding-top: 0;
-      // }
-
-      // &:last-child a {
-      //   padding-bottom: 0;
-      // }
     }
   }
 
@@ -58,20 +50,7 @@
     .navMenuItems {
       display: flex;
       margin: 0;
-      margin-right: 24px;
       position: relative;
-      padding-right: 8px;;
-
-      &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        width: 1px;
-        height: 26px;
-        background-color: rgba(36, 37, 44, 0.08);
-      }
 
       li {
         a {
@@ -102,6 +81,13 @@
             &::before {
               background-color: var(--color-brand-secondary);
             }
+          }
+        }
+
+        &:last-child {
+          a {
+            margin-right: 0;
+            padding-right: 0;
           }
         }
       }

@@ -2,7 +2,8 @@
   "nav_menu": {
     "work": "Work",
     "about": "About",
-    "articles": "Articles"
+    "articles": "Articles",
+    "contact": "Get in touch"
   },
   "Go to home": "Go to home page",
   "Change language": "Mudar idioma do site para {{locale}}",

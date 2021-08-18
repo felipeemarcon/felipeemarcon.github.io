@@ -1,13 +1,20 @@
+import PropTypes from "prop-types";
 import Link from "next/link";
 
 import Icon from "@components/Icon";
 
 // Styles
 import styles from "@styles/components/SocialLinks.module.scss";
+import classNames from "classnames";
 
-export default function SocialLinks({ links }) {
+export default function SocialLinks({ links, type }) {
+  const classes = classNames([styles.socialList], {
+    [styles.typeHeader]: type === "header",
+    [styles.typeFooter]: type === "footer",
+  });
+
   return (
-    <ul className={styles.socialList}>
+    <ul className={classes}>
       {links.map(({ frontmatter: { link, label, icon } }, index) => {
         return (
           <li key={index}>
@@ -27,3 +34,13 @@ export default function SocialLinks({ links }) {
     </ul>
   );
 }
+
+SocialLinks.defaultProps = {
+  links: {},
+  type: "header",
+};
+
+SocialLinks.propTypes = {
+  links: PropTypes.arrayOf(PropTypes.object).isRequired,
+  type: PropTypes.string,
+};
