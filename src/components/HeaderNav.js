@@ -2,6 +2,9 @@
 import Link from "next/link";
 import LinkUnderscore from "@components/LinkUnderscore";
 
+// Site components
+import DividerLine from "@components/DividerLine";
+
 // Content
 import { attributes as globalAttributes } from "@content/contact/configs.md";
 
@@ -18,16 +21,24 @@ export default function HeaderNav() {
 
   const navMenuItems = [
     {
-      link: "/#work",
+      link: "/#myProjects",
       label: t("nav_menu.work"),
+      newTab: false,
     },
     {
-      link: "/#about",
+      link: "/#aboutMe",
       label: t("nav_menu.about"),
+      newTab: false,
     },
     {
-      link: "/blog",
+      link: "https://medium.com/@felipemarcon",
       label: t("nav_menu.articles"),
+      newTab: true,
+    },
+    {
+      link: "mailto:oi@felipemarcon.com.br",
+      label: t("nav_menu.contact"),
+      newTab: false,
     },
   ];
 
@@ -37,7 +48,7 @@ export default function HeaderNav() {
         {items.map((item, index) => (
           <li key={index}>
             <Link href={item.link}>
-              <a>{item.label}</a>
+              <a target={`${item.newTab && "target='_blank'"}`}>{item.label}</a>
             </Link>
           </li>
         ))}
@@ -46,16 +57,8 @@ export default function HeaderNav() {
   };
 
   return (
-    <nav className={styles.navMenu}>
+    <nav className={styles.navMenu} role="nav">
       {renderNavMenu(navMenuItems)}
-
-      <div className={styles.email}>
-        <LinkUnderscore
-          label={contact_email}
-          link={`mailto:${contact_email}`}
-          size="md"
-        />
-      </div>
     </nav>
   );
 }

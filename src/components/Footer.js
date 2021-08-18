@@ -62,7 +62,7 @@ export default function Footer({ socialLinks }) {
                 </Text>
               </div>
               <div className={styles.social}>
-                <SocialLinks links={socialLinks} />
+                <SocialLinks links={socialLinks} type="footer" />
               </div>
             </div>
             <div className={styles.right}>

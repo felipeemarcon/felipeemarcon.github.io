@@ -23,7 +23,7 @@ export default function AboutMe() {
   const { t } = useTranslation("translation", { useSuspense: false });
 
   return (
-    <Section customClass={styles.aboutMeSection}>
+    <Section id="aboutMe" customClass={styles.aboutMeSection}>
       <Container>
         <Grid>
           <div className={styles.heading}>
@@ -40,7 +40,7 @@ export default function AboutMe() {
         </Grid>
 
         <div className={styles.main}>
-          <Grid>
+          <Grid customClass={styles.grid}>
             <div className={styles.leftCol}>
               <div className={styles.photo}>
                 <div className={styles.image}>

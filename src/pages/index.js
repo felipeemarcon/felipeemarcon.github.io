@@ -25,14 +25,16 @@ export default function Home({ projects, socialLinks, works, ...props }) {
         description="I am a Product Designer with front-end skills based in Brazil"
       />
 
-      <Header />
+      <Header socialLinks={socialLinks} />
 
-      <HomeHero />
-      <div className={styles.darkArea}>
-        <HomeProjects data={projects} />
-        <AboutMe />
-        <Works works={works} />
-        <Footer socialLinks={socialLinks} />
+      <div className={styles.wrapper}>
+        <HomeHero />
+        <div className={styles.darkArea}>
+          <HomeProjects data={projects} />
+          <AboutMe />
+          <Works works={works} />
+          <Footer socialLinks={socialLinks} />
+        </div>
       </div>
     </>
   );

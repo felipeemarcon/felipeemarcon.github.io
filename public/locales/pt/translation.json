@@ -2,7 +2,8 @@
   "nav_menu": {
     "work": "Projetos",
     "about": "Sobre",
-    "articles": "Artigos"
+    "articles": "Artigos",
+    "contact": "Get in touch"
   },
   "Go to home": "Go to home page",
   "Change language": "Change site language to {{locale}}",
