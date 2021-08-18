@@ -2,10 +2,52 @@
 
 .aboutMeSection {
   padding: 64px 0;
+  position: relative;
+  z-index: 3;
+  overflow: initial;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    opacity: 0.32;
+    filter: blur(800px);
+  }
+
+  &::before {
+    width: 770px;
+    height: 770px;
+    background-color: var(--color-brand-primary);
+    top: -230px;
+    left: 165px;
+  }
+
+  &::after {
+    width: 840px;
+    height: 840px;
+    bottom: -72px;
+    right: 62px;
+    background-color: var(--color-brand-secondary);
+  }
 
   @include for-desktop-up() {
     padding: 116px 0;
+
+    &::before {
+      left: initial;
+      right: -50%;
+      transform: translateX(-50%);
+    }
+
+    &::after {
+      left: -524px;
+      right: initial;
+    }
   }
+}
+
+.grid {
+  grid-template-rows: max-content 1fr;
 }
 
 .container {
@@ -17,7 +59,7 @@
   grid-column: 1 / span 8;
 
   .title_highlight {
-    color: var(--color-support-primary);
+    color: var(--color-brand-secondary);
   }
 
   @include for-tablet-up() {
@@ -27,6 +69,8 @@
 
 .main {
   margin-top: 32px;
+  position: relative;
+  z-index: 4;
 }
 
 .leftCol,
@@ -36,6 +80,7 @@
 
 .leftCol {
   grid-column: 1 / span 4;
+  grid-row: 2;
 
   @include for-tablet-up() {
     grid-column: 1 / span 8;
@@ -48,6 +93,7 @@
 
 .rightCol {
   grid-column: 1 / span 4;
+  grid-row: 1;
 
   @include for-tablet-up() {
     grid-column: 1 / span 8;
@@ -131,7 +177,7 @@
 .description {
   position: relative;
   z-index: 3;
-  padding: 48px 0 0;
+  padding: 0 0 48px;
 
   p {
     font-size: 18px;

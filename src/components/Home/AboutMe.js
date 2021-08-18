@@ -40,7 +40,7 @@ export default function AboutMe() {
         </Grid>
 
         <div className={styles.main}>
-          <Grid>
+          <Grid customClass={styles.grid}>
             <div className={styles.leftCol}>
               <div className={styles.photo}>
                 <div className={styles.image}>
