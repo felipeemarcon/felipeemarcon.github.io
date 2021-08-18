@@ -1,11 +1,33 @@
 .button {
   border: none;
-  padding: 12px 24px;
+  padding: 16px 24px;
   background-color: var(--color-brand-primary);
   font-family: var(--font-primary);
   font-size: 18px;
   transition: var(--transition-default);
   cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale3D(0, 1, 1);
+    will-change: transform;
+    background-color: var(--color-brand-secondary);
+    transform-origin: 0 50%;
+    transition: 0.6s 0s cubic-bezier(.88,.16,.31,.88);
+  }
+
+  .label, .icon {
+    position: relative;
+    z-index: 2;
+  }
 
   .label {
     line-height: 30px;
@@ -13,7 +35,26 @@
     color: var(--color-neutral-white);
   }
 
+  .icon {
+    margin-left: 8px;
+
+    svg path {
+      fill: var(--color-neutral-white);
+    }
+  }
+
+  .arrowIcon {
+    transition: 0.24s 0.2s ease-in-out;
+    will-change: transform;
+  }
+
   &:hover {
-    background-color: var(--color-brand-secondary);
+    &::before {
+      transform: scale3D(1, 1, 1);
+    }
+
+    .arrowIcon {
+      transform: translateY(2px);
+    }
   }
 }

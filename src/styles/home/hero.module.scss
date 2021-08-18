@@ -1,5 +1,13 @@
 @import '../mixins';
 
+.section {
+  padding: 64px 0;
+
+  @include for-desktop-up() {
+    padding: 64px 0 116px;
+  }
+}
+
 .hero {
 
   .left {

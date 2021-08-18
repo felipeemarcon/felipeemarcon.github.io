@@ -14,41 +14,39 @@ import { attributes as globalAttributes } from "@content/contact/configs.md";
 import { Trans, useTranslation } from "react-i18next";
 
 // Styles
-import heroStyles from "@styles/home/hero.module.scss";
+import styles from "@styles/home/hero.module.scss";
 
 export default function HomeHero() {
   const { t } = useTranslation("translation", { useSuspense: false });
   const { contact_email } = globalAttributes;
 
   return (
-    <Section>
+    <Section customClass={styles.section}>
       <Container>
-        <div className={heroStyles.hero}>
+        <div className={styles.hero}>
           <Grid>
-            <div className={heroStyles.left}>
-              <div className={heroStyles.heading}>
-                <div className={heroStyles.greeting}>{t("Hello there")}</div>
-                <Heading type="h1" customClass={heroStyles.title}>
+            <div className={styles.left}>
+              <div className={styles.heading}>
+                <div className={styles.greeting}>{t("Hello there")}</div>
+                <Heading type="h1" customClass={styles.title}>
                   <Trans
                     i18nKey="Im Felipe"
                     defaults="I'm <highlight>Felipe Marcon</highlight> and I design delightful experiences."
                     components={{
-                      highlight: (
-                        <span className={heroStyles.title_highlight} />
-                      ),
+                      highlight: <span className={styles.title_highlight} />,
                     }}
                   />
                 </Heading>
               </div>
-              <div className={heroStyles.content}>
-                <div className={heroStyles.description}>
+              <div className={styles.content}>
+                <div className={styles.description}>
                   <Text>{t("Hero Description")}</Text>
                 </div>
-                <div className={heroStyles.contact}>
+                <div className={styles.contact}>
                   <Text
                     tag="span"
                     weight={600}
-                    customClass={heroStyles.contact_label}
+                    customClass={styles.contact_label}
                   >
                     {t("How can I help you?")}
                   </Text>
@@ -58,8 +56,13 @@ export default function HomeHero() {
                     size="md"
                   />
                 </div>
-                <div className={heroStyles.action}>
-                  <Button label={t("Check my work")} link="#myProjects" />
+                <div className={styles.action}>
+                  <Button
+                    label={t("Check my work")}
+                    link="#myProjects"
+                    icon="arrowDown"
+                    hasArrow={true}
+                  />
                 </div>
               </div>
             </div>
