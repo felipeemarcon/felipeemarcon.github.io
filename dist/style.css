@@ -125,6 +125,9 @@ h1 {
 .mSocial ul li a, .mSocial ul li a svg path {
   transition: 0.2s ease-in-out;
 }
+.mSocial ul li a svg {
+  width: 48px;
+}
 .mSocial ul li a:hover svg path {
   fill: #FF7272;
 }
